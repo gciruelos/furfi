@@ -1,0 +1,656 @@
+AAA,http://www.felixcloutier.com/x86/AAA.html,ASCII Adjust After Addition
+AAD,http://www.felixcloutier.com/x86/AAD.html,ASCII Adjust AX Before Division
+AAM,http://www.felixcloutier.com/x86/AAM.html,ASCII Adjust AX After Multiply
+AAS,http://www.felixcloutier.com/x86/AAS.html,ASCII Adjust AL After Subtraction
+ADC,http://www.felixcloutier.com/x86/ADC.html,Add with Carry
+ADD,http://www.felixcloutier.com/x86/ADD.html,Add
+ADDPD,http://www.felixcloutier.com/x86/ADDPD.html,Add Packed Double-Precision Floating-Point Values
+ADDPS,http://www.felixcloutier.com/x86/ADDPS.html,Add Packed Single-Precision Floating-Point Values
+ADDSD,http://www.felixcloutier.com/x86/ADDSD.html,Add Scalar Double-Precision Floating-Point Values
+ADDSS,http://www.felixcloutier.com/x86/ADDSS.html,Add Scalar Single-Precision Floating-Point Values
+ADDSUBPD,http://www.felixcloutier.com/x86/ADDSUBPD.html,Packed Double-FP Add/Subtract
+ADDSUBPS,http://www.felixcloutier.com/x86/ADDSUBPS.html,Packed Single-FP Add/Subtract
+AESDEC,http://www.felixcloutier.com/x86/AESDEC.html,Perform One Round of an AES Decryption Flow
+AESDECLAST,http://www.felixcloutier.com/x86/AESDECLAST.html,Perform Last Round of an AES Decryption Flow
+AESENC,http://www.felixcloutier.com/x86/AESENC.html,Perform One Round of an AES Encryption Flow
+AESENCLAST,http://www.felixcloutier.com/x86/AESENCLAST.html,Perform Last Round of an AES Encryption Flow
+AESIMC,http://www.felixcloutier.com/x86/AESIMC.html,Perform the AES InvMixColumn Transformation
+AESKEYGENASSIST,http://www.felixcloutier.com/x86/AESKEYGENASSIST.html,AES Round Key Generation Assist
+AND,http://www.felixcloutier.com/x86/AND.html,Logical AND
+ANDN,http://www.felixcloutier.com/x86/ANDN.html,Logical AND NOT
+ANDNPD,http://www.felixcloutier.com/x86/ANDNPD.html,Bitwise Logical AND NOT of Packed Double-Precision Floating-Point Values
+ANDNPS,http://www.felixcloutier.com/x86/ANDNPS.html,Bitwise Logical AND NOT of Packed Single-Precision Floating-Point Values
+ANDPD,http://www.felixcloutier.com/x86/ANDPD.html,Bitwise Logical AND of Packed Double-Precision Floating-Point Values
+ANDPS,http://www.felixcloutier.com/x86/ANDPS.html,Bitwise Logical AND of Packed Single-Precision Floating-Point Values
+ARPL,http://www.felixcloutier.com/x86/ARPL.html,Adjust RPL Field of Segment Selector
+BEXTR,http://www.felixcloutier.com/x86/BEXTR.html,Bit Field Extract
+BLENDPD,http://www.felixcloutier.com/x86/BLENDPD.html,Blend Packed Double Precision Floating-Point Values
+BLENDPS,http://www.felixcloutier.com/x86/BLENDPS.html,Blend Packed Single Precision Floating-Point Values
+BLENDVPD,http://www.felixcloutier.com/x86/BLENDVPD.html,Variable Blend Packed Double Precision Floating-Point Values
+BLENDVPS,http://www.felixcloutier.com/x86/BLENDVPS.html,Variable Blend Packed Single Precision Floating-Point Values
+BLSI,http://www.felixcloutier.com/x86/BLSI.html,Extract Lowest Set Isolated Bit
+BLSMSK,http://www.felixcloutier.com/x86/BLSMSK.html,Get Mask Up to Lowest Set Bit
+BLSR,http://www.felixcloutier.com/x86/BLSR.html,Reset Lowest Set Bit
+BOUND,http://www.felixcloutier.com/x86/BOUND.html,Check Array Index Against Bounds
+BSF,http://www.felixcloutier.com/x86/BSF.html,Bit Scan Forward
+BSR,http://www.felixcloutier.com/x86/BSR.html,Bit Scan Reverse
+BSWAP,http://www.felixcloutier.com/x86/BSWAP.html,Byte Swap
+BT,http://www.felixcloutier.com/x86/BT.html,Bit Test
+BTC,http://www.felixcloutier.com/x86/BTC.html,Bit Test and Complement
+BTR,http://www.felixcloutier.com/x86/BTR.html,Bit Test and Reset
+BTS,http://www.felixcloutier.com/x86/BTS.html,Bit Test and Set
+BZHI,http://www.felixcloutier.com/x86/BZHI.html,Zero High Bits Starting with Specified Bit Position
+CALL,http://www.felixcloutier.com/x86/CALL.html,Call Procedure
+CBW,http://www.felixcloutier.com/x86/CBW:CWDE:CDQE.html,Convert Byte to Word/Convert Word to Doubleword/Convert Doubleword to Quadword
+CWDE,http://www.felixcloutier.com/x86/CBW:CWDE:CDQE.html,Convert Byte to Word/Convert Word to Doubleword/Convert Doubleword to Quadword
+CDQE,http://www.felixcloutier.com/x86/CBW:CWDE:CDQE.html,Convert Byte to Word/Convert Word to Doubleword/Convert Doubleword to Quadword
+CLC,http://www.felixcloutier.com/x86/CLC.html,Clear Carry Flag
+CLD,http://www.felixcloutier.com/x86/CLD.html,Clear Direction Flag
+CLFLUSH,http://www.felixcloutier.com/x86/CLFLUSH.html,Flush Cache Line
+CLI,http://www.felixcloutier.com/x86/CLI.html,Clear Interrupt Flag
+CLTS,http://www.felixcloutier.com/x86/CLTS.html,Clear Task-Switched Flag in CR0
+CMC,http://www.felixcloutier.com/x86/CMC.html,Complement Carry Flag
+CMOVcc,http://www.felixcloutier.com/x86/CMOVcc.html,Conditional Move
+CMP,http://www.felixcloutier.com/x86/CMP.html,Compare Two Operands
+CMPPD,http://www.felixcloutier.com/x86/CMPPD.html,Compare Packed Double-Precision Floating-Point Values
+CMPPS,http://www.felixcloutier.com/x86/CMPPS.html,Compare Packed Single-Precision Floating-Point Values
+CMPS,http://www.felixcloutier.com/x86/CMPS:CMPSB:CMPSW:CMPSD:CMPSQ.html,Compare String Operands
+CMPSB,http://www.felixcloutier.com/x86/CMPS:CMPSB:CMPSW:CMPSD:CMPSQ.html,Compare String Operands
+CMPSW,http://www.felixcloutier.com/x86/CMPS:CMPSB:CMPSW:CMPSD:CMPSQ.html,Compare String Operands
+CMPSD,http://www.felixcloutier.com/x86/CMPS:CMPSB:CMPSW:CMPSD:CMPSQ.html,Compare String Operands
+CMPSQ,http://www.felixcloutier.com/x86/CMPS:CMPSB:CMPSW:CMPSD:CMPSQ.html,Compare String Operands
+CMPSD,http://www.felixcloutier.com/x86/CMPSD.html,Compare Scalar Double-Precision Floating-Point Values
+CMPSS,http://www.felixcloutier.com/x86/CMPSS.html,Compare Scalar Single-Precision Floating-Point Values
+CMPXCHG,http://www.felixcloutier.com/x86/CMPXCHG.html,Compare and Exchange
+CMPXCHG8B,http://www.felixcloutier.com/x86/CMPXCHG8B:CMPXCHG16B.html,Compare and Exchange Bytes
+CMPXCHG16B,http://www.felixcloutier.com/x86/CMPXCHG8B:CMPXCHG16B.html,Compare and Exchange Bytes
+COMISD,http://www.felixcloutier.com/x86/COMISD.html,Compare Scalar Ordered Double-Precision Floating-Point Values and Set EFLAGS
+COMISS,http://www.felixcloutier.com/x86/COMISS.html,Compare Scalar Ordered Single-Precision Floating-Point Values and Set EFLAGS
+CPUID,http://www.felixcloutier.com/x86/CPUID.html,CPU Identification
+CRC32,http://www.felixcloutier.com/x86/CRC32.html,Accumulate CRC32 Value
+CVTDQ2PD,http://www.felixcloutier.com/x86/CVTDQ2PD.html,Convert Packed Dword Integers to Packed Double-Precision FP Values
+CVTDQ2PS,http://www.felixcloutier.com/x86/CVTDQ2PS.html,Convert Packed Dword Integers to Packed Single-Precision FP Values
+CVTPD2DQ,http://www.felixcloutier.com/x86/CVTPD2DQ.html,Convert Packed Double-Precision FP Values to Packed Dword Integers
+CVTPD2PI,http://www.felixcloutier.com/x86/CVTPD2PI.html,Convert Packed Double-Precision FP Values to Packed Dword Integers
+CVTPD2PS,http://www.felixcloutier.com/x86/CVTPD2PS.html,Convert Packed Double-Precision FP Values to Packed Single-Precision FP Values
+CVTPI2PD,http://www.felixcloutier.com/x86/CVTPI2PD.html,Convert Packed Dword Integers to Packed Double-Precision FP Values
+CVTPI2PS,http://www.felixcloutier.com/x86/CVTPI2PS.html,Convert Packed Dword Integers to Packed Single-Precision FP Values
+CVTPS2DQ,http://www.felixcloutier.com/x86/CVTPS2DQ.html,Convert Packed Single-Precision FP Values to Packed Dword Integers
+CVTPS2PD,http://www.felixcloutier.com/x86/CVTPS2PD.html,Convert Packed Single-Precision FP Values to Packed Double-Precision FP Values
+CVTPS2PI,http://www.felixcloutier.com/x86/CVTPS2PI.html,Convert Packed Single-Precision FP Values to Packed Dword Integers
+CVTSD2SI,http://www.felixcloutier.com/x86/CVTSD2SI.html,Convert Scalar Double-Precision FP Value to Integer
+CVTSD2SS,http://www.felixcloutier.com/x86/CVTSD2SS.html,Convert Scalar Double-Precision FP Value to Scalar Single-Precision FP Value
+CVTSI2SD,http://www.felixcloutier.com/x86/CVTSI2SD.html,Convert Dword Integer to Scalar Double-Precision FP Value
+CVTSI2SS,http://www.felixcloutier.com/x86/CVTSI2SS.html,Convert Dword Integer to Scalar Single-Precision FP Value
+CVTSS2SD,http://www.felixcloutier.com/x86/CVTSS2SD.html,Convert Scalar Single-Precision FP Value to Scalar Double-Precision FP Value
+CVTSS2SI,http://www.felixcloutier.com/x86/CVTSS2SI.html,Convert Scalar Single-Precision FP Value to Dword Integer
+CVTTPD2DQ,http://www.felixcloutier.com/x86/CVTTPD2DQ.html,Convert with Truncation Packed Double-Precision FP Values to Packed Dword Integers
+CVTTPD2PI,http://www.felixcloutier.com/x86/CVTTPD2PI.html,Convert with Truncation Packed Double-Precision FP Values to Packed Dword Integers
+CVTTPS2DQ,http://www.felixcloutier.com/x86/CVTTPS2DQ.html,Convert with Truncation Packed Single-Precision FP Values to Packed Dword Integers
+CVTTPS2PI,http://www.felixcloutier.com/x86/CVTTPS2PI.html,Convert with Truncation Packed Single-Precision FP Values to Packed Dword Integers
+CVTTSD2SI,http://www.felixcloutier.com/x86/CVTTSD2SI.html,Convert with Truncation Scalar Double-Precision FP Value to Signed Integer
+CVTTSS2SI,http://www.felixcloutier.com/x86/CVTTSS2SI.html,Convert with Truncation Scalar Single-Precision FP Value to Dword Integer
+CWD,http://www.felixcloutier.com/x86/CWD:CDQ:CQO.html,Convert Word to Doubleword/Convert Doubleword to Quadword
+CDQ,http://www.felixcloutier.com/x86/CWD:CDQ:CQO.html,Convert Word to Doubleword/Convert Doubleword to Quadword
+CQO,http://www.felixcloutier.com/x86/CWD:CDQ:CQO.html,Convert Word to Doubleword/Convert Doubleword to Quadword
+DAA,http://www.felixcloutier.com/x86/DAA.html,Decimal Adjust AL after Addition
+DAS,http://www.felixcloutier.com/x86/DAS.html,Decimal Adjust AL after Subtraction
+DEC,http://www.felixcloutier.com/x86/DEC.html,Decrement by 1
+DIV,http://www.felixcloutier.com/x86/DIV.html,Unsigned Divide
+DIVPD,http://www.felixcloutier.com/x86/DIVPD.html,Divide Packed Double-Precision Floating-Point Values
+DIVPS,http://www.felixcloutier.com/x86/DIVPS.html,Divide Packed Single-Precision Floating-Point Values
+DIVSD,http://www.felixcloutier.com/x86/DIVSD.html,Divide Scalar Double-Precision Floating-Point Values
+DIVSS,http://www.felixcloutier.com/x86/DIVSS.html,Divide Scalar Single-Precision Floating-Point Values
+DPPD,http://www.felixcloutier.com/x86/DPPD.html,Dot Product of Packed Double Precision Floating-Point Values
+DPPS,http://www.felixcloutier.com/x86/DPPS.html,Dot Product of Packed Single Precision Floating-Point Values
+EMMS,http://www.felixcloutier.com/x86/EMMS.html,Empty MMX Technology State
+ENTER,http://www.felixcloutier.com/x86/ENTER.html,Make Stack Frame for Procedure Parameters
+EXTRACTPS,http://www.felixcloutier.com/x86/EXTRACTPS.html,Extract Packed Single Precision Floating-Point Value
+F2XM1,http://www.felixcloutier.com/x86/F2XM1.html,Compute 2x-1
+FABS,http://www.felixcloutier.com/x86/FABS.html,Absolute Value
+FADD,http://www.felixcloutier.com/x86/FADD:FADDP:FIADD.html,Add
+FADDP,http://www.felixcloutier.com/x86/FADD:FADDP:FIADD.html,Add
+FIADD,http://www.felixcloutier.com/x86/FADD:FADDP:FIADD.html,Add
+FBLD,http://www.felixcloutier.com/x86/FBLD.html,Load Binary Coded Decimal
+FBSTP,http://www.felixcloutier.com/x86/FBSTP.html,Store BCD Integer and Pop
+FCHS,http://www.felixcloutier.com/x86/FCHS.html,Change Sign
+FCLEX,http://www.felixcloutier.com/x86/FCLEX:FNCLEX.html,Clear Exceptions
+FNCLEX,http://www.felixcloutier.com/x86/FCLEX:FNCLEX.html,Clear Exceptions
+FCMOVcc,http://www.felixcloutier.com/x86/FCMOVcc.html,Floating-Point Conditional Move
+FCOM,http://www.felixcloutier.com/x86/FCOM:FCOMP:FCOMPP.html,Compare Floating Point Values
+FCOMP,http://www.felixcloutier.com/x86/FCOM:FCOMP:FCOMPP.html,Compare Floating Point Values
+FCOMPP,http://www.felixcloutier.com/x86/FCOM:FCOMP:FCOMPP.html,Compare Floating Point Values
+FCOMI,http://www.felixcloutier.com/x86/FCOMI:FCOMIP:FUCOMI:FUCOMIP.html,Compare Floating Point Values and Set EFLAGS
+FCOMIP,http://www.felixcloutier.com/x86/FCOMI:FCOMIP:FUCOMI:FUCOMIP.html,Compare Floating Point Values and Set EFLAGS
+FUCOMI,http://www.felixcloutier.com/x86/FCOMI:FCOMIP:FUCOMI:FUCOMIP.html,Compare Floating Point Values and Set EFLAGS
+FUCOMIP,http://www.felixcloutier.com/x86/FCOMI:FCOMIP:FUCOMI:FUCOMIP.html,Compare Floating Point Values and Set EFLAGS
+FCOS,http://www.felixcloutier.com/x86/FCOS.html,Cosine
+FDECSTP,http://www.felixcloutier.com/x86/FDECSTP.html,Decrement Stack-Top Pointer
+FDIV,http://www.felixcloutier.com/x86/FDIV:FDIVP:FIDIV.html,Divide
+FDIVP,http://www.felixcloutier.com/x86/FDIV:FDIVP:FIDIV.html,Divide
+FIDIV,http://www.felixcloutier.com/x86/FDIV:FDIVP:FIDIV.html,Divide
+FDIVR,http://www.felixcloutier.com/x86/FDIVR:FDIVRP:FIDIVR.html,Reverse Divide
+FDIVRP,http://www.felixcloutier.com/x86/FDIVR:FDIVRP:FIDIVR.html,Reverse Divide
+FIDIVR,http://www.felixcloutier.com/x86/FDIVR:FDIVRP:FIDIVR.html,Reverse Divide
+FFREE,http://www.felixcloutier.com/x86/FFREE.html,Free Floating-Point Register
+FICOM,http://www.felixcloutier.com/x86/FICOM:FICOMP.html,Compare Integer
+FICOMP,http://www.felixcloutier.com/x86/FICOM:FICOMP.html,Compare Integer
+FILD,http://www.felixcloutier.com/x86/FILD.html,Load Integer
+FINCSTP,http://www.felixcloutier.com/x86/FINCSTP.html,Increment Stack-Top Pointer
+FINIT,http://www.felixcloutier.com/x86/FINIT:FNINIT.html,Initialize Floating-Point Unit
+FNINIT,http://www.felixcloutier.com/x86/FINIT:FNINIT.html,Initialize Floating-Point Unit
+FIST,http://www.felixcloutier.com/x86/FIST:FISTP.html,Store Integer
+FISTP,http://www.felixcloutier.com/x86/FIST:FISTP.html,Store Integer
+FISTTP,http://www.felixcloutier.com/x86/FISTTP.html,Store Integer with Truncation
+FLD,http://www.felixcloutier.com/x86/FLD.html,Load Floating Point Value
+FLD1,http://www.felixcloutier.com/x86/FLD1:FLDL2T:FLDL2E:FLDPI:FLDLG2:FLDLN2:FLDZ.html,Load Constant
+FLDL2T,http://www.felixcloutier.com/x86/FLD1:FLDL2T:FLDL2E:FLDPI:FLDLG2:FLDLN2:FLDZ.html,Load Constant
+FLDL2E,http://www.felixcloutier.com/x86/FLD1:FLDL2T:FLDL2E:FLDPI:FLDLG2:FLDLN2:FLDZ.html,Load Constant
+FLDPI,http://www.felixcloutier.com/x86/FLD1:FLDL2T:FLDL2E:FLDPI:FLDLG2:FLDLN2:FLDZ.html,Load Constant
+FLDLG2,http://www.felixcloutier.com/x86/FLD1:FLDL2T:FLDL2E:FLDPI:FLDLG2:FLDLN2:FLDZ.html,Load Constant
+FLDLN2,http://www.felixcloutier.com/x86/FLD1:FLDL2T:FLDL2E:FLDPI:FLDLG2:FLDLN2:FLDZ.html,Load Constant
+FLDZ,http://www.felixcloutier.com/x86/FLD1:FLDL2T:FLDL2E:FLDPI:FLDLG2:FLDLN2:FLDZ.html,Load Constant
+FLDCW,http://www.felixcloutier.com/x86/FLDCW.html,Load x87 FPU Control Word
+FLDENV,http://www.felixcloutier.com/x86/FLDENV.html,Load x87 FPU Environment
+FMUL,http://www.felixcloutier.com/x86/FMUL:FMULP:FIMUL.html,Multiply
+FMULP,http://www.felixcloutier.com/x86/FMUL:FMULP:FIMUL.html,Multiply
+FIMUL,http://www.felixcloutier.com/x86/FMUL:FMULP:FIMUL.html,Multiply
+FNOP,http://www.felixcloutier.com/x86/FNOP.html,No Operation
+FPATAN,http://www.felixcloutier.com/x86/FPATAN.html,Partial Arctangent
+FPREM,http://www.felixcloutier.com/x86/FPREM.html,Partial Remainder
+FPREM1,http://www.felixcloutier.com/x86/FPREM1.html,Partial Remainder
+FPTAN,http://www.felixcloutier.com/x86/FPTAN.html,Partial Tangent
+FRNDINT,http://www.felixcloutier.com/x86/FRNDINT.html,Round to Integer
+FRSTOR,http://www.felixcloutier.com/x86/FRSTOR.html,Restore x87 FPU State
+FSAVE,http://www.felixcloutier.com/x86/FSAVE:FNSAVE.html,Store x87 FPU State
+FNSAVE,http://www.felixcloutier.com/x86/FSAVE:FNSAVE.html,Store x87 FPU State
+FSCALE,http://www.felixcloutier.com/x86/FSCALE.html,Scale
+FSIN,http://www.felixcloutier.com/x86/FSIN.html,Sine
+FSINCOS,http://www.felixcloutier.com/x86/FSINCOS.html,Sine and Cosine
+FSQRT,http://www.felixcloutier.com/x86/FSQRT.html,Square Root
+FST,http://www.felixcloutier.com/x86/FST:FSTP.html,Store Floating Point Value
+FSTP,http://www.felixcloutier.com/x86/FST:FSTP.html,Store Floating Point Value
+FSTCW,http://www.felixcloutier.com/x86/FSTCW:FNSTCW.html,Store x87 FPU Control Word
+FNSTCW,http://www.felixcloutier.com/x86/FSTCW:FNSTCW.html,Store x87 FPU Control Word
+FSTENV,http://www.felixcloutier.com/x86/FSTENV:FNSTENV.html,Store x87 FPU Environment
+FNSTENV,http://www.felixcloutier.com/x86/FSTENV:FNSTENV.html,Store x87 FPU Environment
+FSTSW,http://www.felixcloutier.com/x86/FSTSW:FNSTSW.html,Store x87 FPU Status Word
+FNSTSW,http://www.felixcloutier.com/x86/FSTSW:FNSTSW.html,Store x87 FPU Status Word
+FSUB,http://www.felixcloutier.com/x86/FSUB:FSUBP:FISUB.html,Subtract
+FSUBP,http://www.felixcloutier.com/x86/FSUB:FSUBP:FISUB.html,Subtract
+FISUB,http://www.felixcloutier.com/x86/FSUB:FSUBP:FISUB.html,Subtract
+FSUBR,http://www.felixcloutier.com/x86/FSUBR:FSUBRP:FISUBR.html,Reverse Subtract
+FSUBRP,http://www.felixcloutier.com/x86/FSUBR:FSUBRP:FISUBR.html,Reverse Subtract
+FISUBR,http://www.felixcloutier.com/x86/FSUBR:FSUBRP:FISUBR.html,Reverse Subtract
+FTST,http://www.felixcloutier.com/x86/FTST.html,TEST
+FUCOM,http://www.felixcloutier.com/x86/FUCOM:FUCOMP:FUCOMPP.html,Unordered Compare Floating Point Values
+FUCOMP,http://www.felixcloutier.com/x86/FUCOM:FUCOMP:FUCOMPP.html,Unordered Compare Floating Point Values
+FUCOMPP,http://www.felixcloutier.com/x86/FUCOM:FUCOMP:FUCOMPP.html,Unordered Compare Floating Point Values
+FXAM,http://www.felixcloutier.com/x86/FXAM.html,Examine ModR/M
+FXCH,http://www.felixcloutier.com/x86/FXCH.html,Exchange Register Contents
+FXRSTOR,http://www.felixcloutier.com/x86/FXRSTOR.html,Restore x87 FPU, MMX , XMM, and MXCSR State
+FXSAVE,http://www.felixcloutier.com/x86/FXSAVE.html,Save x87 FPU, MMX Technology, and SSE State
+FXTRACT,http://www.felixcloutier.com/x86/FXTRACT.html,Extract Exponent and Significand
+FYL2X,http://www.felixcloutier.com/x86/FYL2X.html,Compute y ∗ log2x
+FYL2XP1,http://www.felixcloutier.com/x86/FYL2XP1.html,Compute y ∗ log2(x +1)
+HADDPD,http://www.felixcloutier.com/x86/HADDPD.html,Packed Double-FP Horizontal Add
+HADDPS,http://www.felixcloutier.com/x86/HADDPS.html,Packed Single-FP Horizontal Add
+HLT,http://www.felixcloutier.com/x86/HLT.html,Halt
+HSUBPD,http://www.felixcloutier.com/x86/HSUBPD.html,Packed Double-FP Horizontal Subtract
+HSUBPS,http://www.felixcloutier.com/x86/HSUBPS.html,Packed Single-FP Horizontal Subtract
+IDIV,http://www.felixcloutier.com/x86/IDIV.html,Signed Divide
+IMUL,http://www.felixcloutier.com/x86/IMUL.html,Signed Multiply
+IN,http://www.felixcloutier.com/x86/IN.html,Input from Port
+INC,http://www.felixcloutier.com/x86/INC.html,Increment by 1
+INS,http://www.felixcloutier.com/x86/INS:INSB:INSW:INSD.html,Input from Port to String
+INSB,http://www.felixcloutier.com/x86/INS:INSB:INSW:INSD.html,Input from Port to String
+INSW,http://www.felixcloutier.com/x86/INS:INSB:INSW:INSD.html,Input from Port to String
+INSD,http://www.felixcloutier.com/x86/INS:INSB:INSW:INSD.html,Input from Port to String
+INSERTPS,http://www.felixcloutier.com/x86/INSERTPS.html,Insert Packed Single Precision Floating-Point Value
+INT n,http://www.felixcloutier.com/x86/INT%20n:INTO:INT%203.html,Call to Interrupt Procedure
+INTO,http://www.felixcloutier.com/x86/INT%20n:INTO:INT%203.html,Call to Interrupt Procedure
+INT 3,http://www.felixcloutier.com/x86/INT%20n:INTO:INT%203.html,Call to Interrupt Procedure
+INVD,http://www.felixcloutier.com/x86/INVD.html,Invalidate Internal Caches
+INVLPG,http://www.felixcloutier.com/x86/INVLPG.html,Invalidate TLB Entry
+INVPCID,http://www.felixcloutier.com/x86/INVPCID.html,Invalidate Process-Context Identifier
+IRET,http://www.felixcloutier.com/x86/IRET:IRETD.html,Interrupt Return
+IRETD,http://www.felixcloutier.com/x86/IRET:IRETD.html,Interrupt Return
+JMP,http://www.felixcloutier.com/x86/JMP.html,Jump
+Jcc,http://www.felixcloutier.com/x86/Jcc.html,Jump if Condition Is Met
+LAHF,http://www.felixcloutier.com/x86/LAHF.html,Load Status Flags into AH Register
+LAR,http://www.felixcloutier.com/x86/LAR.html,Load Access Rights Byte
+LDDQU,http://www.felixcloutier.com/x86/LDDQU.html,Load Unaligned Integer 128 Bits
+LDMXCSR,http://www.felixcloutier.com/x86/LDMXCSR.html,Load MXCSR Register
+LDS,http://www.felixcloutier.com/x86/LDS:LES:LFS:LGS:LSS.html,Load Far Pointer
+LES,http://www.felixcloutier.com/x86/LDS:LES:LFS:LGS:LSS.html,Load Far Pointer
+LFS,http://www.felixcloutier.com/x86/LDS:LES:LFS:LGS:LSS.html,Load Far Pointer
+LGS,http://www.felixcloutier.com/x86/LDS:LES:LFS:LGS:LSS.html,Load Far Pointer
+LSS,http://www.felixcloutier.com/x86/LDS:LES:LFS:LGS:LSS.html,Load Far Pointer
+LEA,http://www.felixcloutier.com/x86/LEA.html,Load Effective Address
+LEAVE,http://www.felixcloutier.com/x86/LEAVE.html,High Level Procedure Exit
+LFENCE,http://www.felixcloutier.com/x86/LFENCE.html,Load Fence
+LGDT,http://www.felixcloutier.com/x86/LGDT:LIDT.html,Load Global/Interrupt Descriptor Table Register
+LIDT,http://www.felixcloutier.com/x86/LGDT:LIDT.html,Load Global/Interrupt Descriptor Table Register
+LLDT,http://www.felixcloutier.com/x86/LLDT.html,Load Local Descriptor Table Register
+LMSW,http://www.felixcloutier.com/x86/LMSW.html,Load Machine Status Word
+LOCK,http://www.felixcloutier.com/x86/LOCK.html,Assert LOCK# Signal Prefix
+LODS,http://www.felixcloutier.com/x86/LODS:LODSB:LODSW:LODSD:LODSQ.html,Load String
+LODSB,http://www.felixcloutier.com/x86/LODS:LODSB:LODSW:LODSD:LODSQ.html,Load String
+LODSW,http://www.felixcloutier.com/x86/LODS:LODSB:LODSW:LODSD:LODSQ.html,Load String
+LODSD,http://www.felixcloutier.com/x86/LODS:LODSB:LODSW:LODSD:LODSQ.html,Load String
+LODSQ,http://www.felixcloutier.com/x86/LODS:LODSB:LODSW:LODSD:LODSQ.html,Load String
+LOOP,http://www.felixcloutier.com/x86/LOOP:LOOPcc.html,Loop According to ECX Counter
+LOOPcc,http://www.felixcloutier.com/x86/LOOP:LOOPcc.html,Loop According to ECX Counter
+LSL,http://www.felixcloutier.com/x86/LSL.html,Load Segment Limit
+LTR,http://www.felixcloutier.com/x86/LTR.html,Load Task Register
+LZCNT,http://www.felixcloutier.com/x86/LZCNT.html,Count the Number of Leading Zero Bits
+MASKMOVDQU,http://www.felixcloutier.com/x86/MASKMOVDQU.html,Store Selected Bytes of Double Quadword
+MASKMOVQ,http://www.felixcloutier.com/x86/MASKMOVQ.html,Store Selected Bytes of Quadword
+MAXPD,http://www.felixcloutier.com/x86/MAXPD.html,Return Maximum Packed Double-Precision Floating-Point Values
+MAXPS,http://www.felixcloutier.com/x86/MAXPS.html,Return Maximum Packed Single-Precision Floating-Point Values
+MAXSD,http://www.felixcloutier.com/x86/MAXSD.html,Return Maximum Scalar Double-Precision Floating-Point Value
+MAXSS,http://www.felixcloutier.com/x86/MAXSS.html,Return Maximum Scalar Single-Precision Floating-Point Value
+MFENCE,http://www.felixcloutier.com/x86/MFENCE.html,Memory Fence
+MINPD,http://www.felixcloutier.com/x86/MINPD.html,Return Minimum Packed Double-Precision Floating-Point Values
+MINPS,http://www.felixcloutier.com/x86/MINPS.html,Return Minimum Packed Single-Precision Floating-Point Values
+MINSD,http://www.felixcloutier.com/x86/MINSD.html,Return Minimum Scalar Double-Precision Floating-Point Value
+MINSS,http://www.felixcloutier.com/x86/MINSS.html,Return Minimum Scalar Single-Precision Floating-Point Value
+MONITOR,http://www.felixcloutier.com/x86/MONITOR.html,Set Up Monitor Address
+MOV,http://www.felixcloutier.com/x86/MOV-1.html,Move to/from Control Registers
+MOV,http://www.felixcloutier.com/x86/MOV-2.html,Move to/from Debug Registers
+MOV,http://www.felixcloutier.com/x86/MOV.html,Move
+MOVAPD,http://www.felixcloutier.com/x86/MOVAPD.html,Move Aligned Packed Double-Precision Floating-Point Values
+MOVAPS,http://www.felixcloutier.com/x86/MOVAPS.html,Move Aligned Packed Single-Precision Floating-Point Values
+MOVBE,http://www.felixcloutier.com/x86/MOVBE.html,Move Data After Swapping Bytes
+MOVD,http://www.felixcloutier.com/x86/MOVD:MOVQ.html,Move Doubleword/Move Quadword
+MOVQ,http://www.felixcloutier.com/x86/MOVD:MOVQ.html,Move Doubleword/Move Quadword
+MOVDDUP,http://www.felixcloutier.com/x86/MOVDDUP.html,Move One Double-FP and Duplicate
+MOVDQ2Q,http://www.felixcloutier.com/x86/MOVDQ2Q.html,Move Quadword from XMM to MMX Technology Register
+MOVDQA,http://www.felixcloutier.com/x86/MOVDQA.html,Move Aligned Double Quadword
+MOVDQU,http://www.felixcloutier.com/x86/MOVDQU.html,Move Unaligned Double Quadword
+MOVHLPS,http://www.felixcloutier.com/x86/MOVHLPS.html,Move Packed Single-Precision Floating-Point Values High to Low
+MOVHPD,http://www.felixcloutier.com/x86/MOVHPD.html,Move High Packed Double-Precision Floating-Point Value
+MOVHPS,http://www.felixcloutier.com/x86/MOVHPS.html,Move High Packed Single-Precision Floating-Point Values
+MOVLHPS,http://www.felixcloutier.com/x86/MOVLHPS.html,Move Packed Single-Precision Floating-Point Values Low to High
+MOVLPD,http://www.felixcloutier.com/x86/MOVLPD.html,Move Low Packed Double-Precision Floating-Point Value
+MOVLPS,http://www.felixcloutier.com/x86/MOVLPS.html,Move Low Packed Single-Precision Floating-Point Values
+MOVMSKPD,http://www.felixcloutier.com/x86/MOVMSKPD.html,Extract Packed Double-Precision Floating-Point Sign Mask
+MOVMSKPS,http://www.felixcloutier.com/x86/MOVMSKPS.html,Extract Packed Single-Precision Floating-Point Sign Mask
+MOVNTDQ,http://www.felixcloutier.com/x86/MOVNTDQ.html,Store Double Quadword Using Non-Temporal Hint
+MOVNTDQA,http://www.felixcloutier.com/x86/MOVNTDQA.html,Load Double Quadword Non-Temporal Aligned Hint
+MOVNTI,http://www.felixcloutier.com/x86/MOVNTI.html,Store Doubleword Using Non-Temporal Hint
+MOVNTPD,http://www.felixcloutier.com/x86/MOVNTPD.html,Store Packed Double-Precision Floating-Point Values Using Non-Temporal Hint
+MOVNTPS,http://www.felixcloutier.com/x86/MOVNTPS.html,Store Packed Single-Precision Floating-Point Values Using Non-Temporal Hint
+MOVNTQ,http://www.felixcloutier.com/x86/MOVNTQ.html,Store of Quadword Using Non-Temporal Hint
+MOVQ,http://www.felixcloutier.com/x86/MOVQ.html,Move Quadword
+MOVQ2DQ,http://www.felixcloutier.com/x86/MOVQ2DQ.html,Move Quadword from MMX Technology to XMM Register
+MOVS,http://www.felixcloutier.com/x86/MOVS:MOVSB:MOVSW:MOVSD:MOVSQ.html,Move Data from String to String
+MOVSB,http://www.felixcloutier.com/x86/MOVS:MOVSB:MOVSW:MOVSD:MOVSQ.html,Move Data from String to String
+MOVSW,http://www.felixcloutier.com/x86/MOVS:MOVSB:MOVSW:MOVSD:MOVSQ.html,Move Data from String to String
+MOVSD,http://www.felixcloutier.com/x86/MOVS:MOVSB:MOVSW:MOVSD:MOVSQ.html,Move Data from String to String
+MOVSQ,http://www.felixcloutier.com/x86/MOVS:MOVSB:MOVSW:MOVSD:MOVSQ.html,Move Data from String to String
+MOVSD,http://www.felixcloutier.com/x86/MOVSD.html,Move Scalar Double-Precision Floating-Point Value
+MOVSHDUP,http://www.felixcloutier.com/x86/MOVSHDUP.html,Move Packed Single-FP High and Duplicate
+MOVSLDUP,http://www.felixcloutier.com/x86/MOVSLDUP.html,Move Packed Single-FP Low and Duplicate
+MOVSS,http://www.felixcloutier.com/x86/MOVSS.html,Move Scalar Single-Precision Floating-Point Values
+MOVSX,http://www.felixcloutier.com/x86/MOVSX:MOVSXD.html,Move with Sign-Extension
+MOVSXD,http://www.felixcloutier.com/x86/MOVSX:MOVSXD.html,Move with Sign-Extension
+MOVUPD,http://www.felixcloutier.com/x86/MOVUPD.html,Move Unaligned Packed Double-Precision Floating-Point Values
+MOVUPS,http://www.felixcloutier.com/x86/MOVUPS.html,Move Unaligned Packed Single-Precision Floating-Point Values
+MOVZX,http://www.felixcloutier.com/x86/MOVZX.html,Move with Zero-Extend
+MPSADBW,http://www.felixcloutier.com/x86/MPSADBW.html,Compute Multiple Packed Sums of Absolute Difference
+MUL,http://www.felixcloutier.com/x86/MUL.html,Unsigned Multiply
+MULPD,http://www.felixcloutier.com/x86/MULPD.html,Multiply Packed Double-Precision Floating-Point Values
+MULPS,http://www.felixcloutier.com/x86/MULPS.html,Multiply Packed Single-Precision Floating-Point Values
+MULSD,http://www.felixcloutier.com/x86/MULSD.html,Multiply Scalar Double-Precision Floating-Point Values
+MULSS,http://www.felixcloutier.com/x86/MULSS.html,Multiply Scalar Single-Precision Floating-Point Values
+MULX,http://www.felixcloutier.com/x86/MULX.html,Unsigned Multiply Without Affecting Flags
+MWAIT,http://www.felixcloutier.com/x86/MWAIT.html,Monitor Wait
+NEG,http://www.felixcloutier.com/x86/NEG.html','description': "Two's Complement Negation"},
+NOP,http://www.felixcloutier.com/x86/NOP.html,No Operation
+NOT,http://www.felixcloutier.com/x86/NOT.html','description': "One's Complement Negation"},
+OR,http://www.felixcloutier.com/x86/OR.html,Logical Inclusive OR
+ORPD,http://www.felixcloutier.com/x86/ORPD.html,Bitwise Logical OR of Double-Precision Floating-Point Values
+ORPS,http://www.felixcloutier.com/x86/ORPS.html,Bitwise Logical OR of Single-Precision Floating-Point Values
+OUT,http://www.felixcloutier.com/x86/OUT.html,Output to Port
+OUTS,http://www.felixcloutier.com/x86/OUTS:OUTSB:OUTSW:OUTSD.html,Output String to Port
+OUTSB,http://www.felixcloutier.com/x86/OUTS:OUTSB:OUTSW:OUTSD.html,Output String to Port
+OUTSW,http://www.felixcloutier.com/x86/OUTS:OUTSB:OUTSW:OUTSD.html,Output String to Port
+OUTSD,http://www.felixcloutier.com/x86/OUTS:OUTSB:OUTSW:OUTSD.html,Output String to Port
+PABSB,http://www.felixcloutier.com/x86/PABSB:PABSW:PABSD.html,Packed Absolute Value
+PABSW,http://www.felixcloutier.com/x86/PABSB:PABSW:PABSD.html,Packed Absolute Value
+PABSD,http://www.felixcloutier.com/x86/PABSB:PABSW:PABSD.html,Packed Absolute Value
+PACKSSWB,http://www.felixcloutier.com/x86/PACKSSWB:PACKSSDW.html,Pack with Signed Saturation
+PACKSSDW,http://www.felixcloutier.com/x86/PACKSSWB:PACKSSDW.html,Pack with Signed Saturation
+PACKUSDW,http://www.felixcloutier.com/x86/PACKUSDW.html,Pack with Unsigned Saturation
+PACKUSWB,http://www.felixcloutier.com/x86/PACKUSWB.html,Pack with Unsigned Saturation
+PADDB,http://www.felixcloutier.com/x86/PADDB:PADDW:PADDD.html,Add Packed Integers
+PADDW,http://www.felixcloutier.com/x86/PADDB:PADDW:PADDD.html,Add Packed Integers
+PADDD,http://www.felixcloutier.com/x86/PADDB:PADDW:PADDD.html,Add Packed Integers
+PADDQ,http://www.felixcloutier.com/x86/PADDQ.html,Add Packed Quadword Integers
+PADDSB,http://www.felixcloutier.com/x86/PADDSB:PADDSW.html,Add Packed Signed Integers with Signed Saturation
+PADDSW,http://www.felixcloutier.com/x86/PADDSB:PADDSW.html,Add Packed Signed Integers with Signed Saturation
+PADDUSB,http://www.felixcloutier.com/x86/PADDUSB:PADDUSW.html,Add Packed Unsigned Integers with Unsigned Saturation
+PADDUSW,http://www.felixcloutier.com/x86/PADDUSB:PADDUSW.html,Add Packed Unsigned Integers with Unsigned Saturation
+PALIGNR,http://www.felixcloutier.com/x86/PALIGNR.html,Packed Align Right
+PAND,http://www.felixcloutier.com/x86/PAND.html,Logical AND
+PANDN,http://www.felixcloutier.com/x86/PANDN.html,Logical AND NOT
+PAUSE,http://www.felixcloutier.com/x86/PAUSE.html,Spin Loop Hint
+PAVGB,http://www.felixcloutier.com/x86/PAVGB:PAVGW.html,Average Packed Integers
+PAVGW,http://www.felixcloutier.com/x86/PAVGB:PAVGW.html,Average Packed Integers
+PBLENDVB,http://www.felixcloutier.com/x86/PBLENDVB.html,Variable Blend Packed Bytes
+PBLENDW,http://www.felixcloutier.com/x86/PBLENDW.html,Blend Packed Words
+PCLMULQDQ,http://www.felixcloutier.com/x86/PCLMULQDQ%20-%20Carry-Less%20Multiplication%20Quadword.html,Carry-Less Multiplication Quadword
+PCMPEQB,http://www.felixcloutier.com/x86/PCMPEQB:PCMPEQW:PCMPEQD.html,Compare Packed Data for Equal
+PCMPEQW,http://www.felixcloutier.com/x86/PCMPEQB:PCMPEQW:PCMPEQD.html,Compare Packed Data for Equal
+PCMPEQD,http://www.felixcloutier.com/x86/PCMPEQB:PCMPEQW:PCMPEQD.html,Compare Packed Data for Equal
+PCMPEQQ,http://www.felixcloutier.com/x86/PCMPEQQ.html,Compare Packed Qword Data for Equal
+PCMPESTRI,http://www.felixcloutier.com/x86/PCMPESTRI.html,Packed Compare Explicit Length Strings, Return Index
+PCMPESTRM,http://www.felixcloutier.com/x86/PCMPESTRM.html,Packed Compare Explicit Length Strings, Return Mask
+PCMPGTB,http://www.felixcloutier.com/x86/PCMPGTB:PCMPGTW:PCMPGTD.html,Compare Packed Signed Integers for Greater Than
+PCMPGTW,http://www.felixcloutier.com/x86/PCMPGTB:PCMPGTW:PCMPGTD.html,Compare Packed Signed Integers for Greater Than
+PCMPGTD,http://www.felixcloutier.com/x86/PCMPGTB:PCMPGTW:PCMPGTD.html,Compare Packed Signed Integers for Greater Than
+PCMPGTQ,http://www.felixcloutier.com/x86/PCMPGTQ.html,Compare Packed Data for Greater Than
+PCMPISTRI,http://www.felixcloutier.com/x86/PCMPISTRI.html,Packed Compare Implicit Length Strings, Return Index
+PCMPISTRM,http://www.felixcloutier.com/x86/PCMPISTRM.html,Packed Compare Implicit Length Strings, Return Mask
+PDEP,http://www.felixcloutier.com/x86/PDEP.html,Parallel Bits Deposit
+PEXT,http://www.felixcloutier.com/x86/PEXT.html,Parallel Bits Extract
+PEXTRB,http://www.felixcloutier.com/x86/PEXTRB:PEXTRD:PEXTRQ.html,Extract Byte/Dword/Qword
+PEXTRD,http://www.felixcloutier.com/x86/PEXTRB:PEXTRD:PEXTRQ.html,Extract Byte/Dword/Qword
+PEXTRQ,http://www.felixcloutier.com/x86/PEXTRB:PEXTRD:PEXTRQ.html,Extract Byte/Dword/Qword
+PEXTRW,http://www.felixcloutier.com/x86/PEXTRW.html,Extract Word
+PHADDSW,http://www.felixcloutier.com/x86/PHADDSW.html,Packed Horizontal Add and Saturate
+PHADDW,http://www.felixcloutier.com/x86/PHADDW:PHADDD.html,Packed Horizontal Add
+PHADDD,http://www.felixcloutier.com/x86/PHADDW:PHADDD.html,Packed Horizontal Add
+PHMINPOSUW,http://www.felixcloutier.com/x86/PHMINPOSUW.html,Packed Horizontal Word Minimum
+PHSUBSW,http://www.felixcloutier.com/x86/PHSUBSW.html,Packed Horizontal Subtract and Saturate
+PHSUBW,http://www.felixcloutier.com/x86/PHSUBW:PHSUBD.html,Packed Horizontal Subtract
+PHSUBD,http://www.felixcloutier.com/x86/PHSUBW:PHSUBD.html,Packed Horizontal Subtract
+PINSRB,http://www.felixcloutier.com/x86/PINSRB:PINSRD:PINSRQ.html,Insert Byte/Dword/Qword
+PINSRD,http://www.felixcloutier.com/x86/PINSRB:PINSRD:PINSRQ.html,Insert Byte/Dword/Qword
+PINSRQ,http://www.felixcloutier.com/x86/PINSRB:PINSRD:PINSRQ.html,Insert Byte/Dword/Qword
+PINSRW,http://www.felixcloutier.com/x86/PINSRW.html,Insert Word
+PMADDUBSW,http://www.felixcloutier.com/x86/PMADDUBSW.html,Multiply and Add Packed Signed and Unsigned Bytes
+PMADDWD,http://www.felixcloutier.com/x86/PMADDWD.html,Multiply and Add Packed Integers
+PMAXSB,http://www.felixcloutier.com/x86/PMAXSB.html,Maximum of Packed Signed Byte Integers
+PMAXSD,http://www.felixcloutier.com/x86/PMAXSD.html,Maximum of Packed Signed Dword Integers
+PMAXSW,http://www.felixcloutier.com/x86/PMAXSW.html,Maximum of Packed Signed Word Integers
+PMAXUB,http://www.felixcloutier.com/x86/PMAXUB.html,Maximum of Packed Unsigned Byte Integers
+PMAXUD,http://www.felixcloutier.com/x86/PMAXUD.html,Maximum of Packed Unsigned Dword Integers
+PMAXUW,http://www.felixcloutier.com/x86/PMAXUW.html,Maximum of Packed Word Integers
+PMINSB,http://www.felixcloutier.com/x86/PMINSB.html,Minimum of Packed Signed Byte Integers
+PMINSD,http://www.felixcloutier.com/x86/PMINSD.html,Minimum of Packed Dword Integers
+PMINSW,http://www.felixcloutier.com/x86/PMINSW.html,Minimum of Packed Signed Word Integers
+PMINUB,http://www.felixcloutier.com/x86/PMINUB.html,Minimum of Packed Unsigned Byte Integers
+PMINUD,http://www.felixcloutier.com/x86/PMINUD.html,Minimum of Packed Dword Integers
+PMINUW,http://www.felixcloutier.com/x86/PMINUW.html,Minimum of Packed Word Integers
+PMOVMSKB,http://www.felixcloutier.com/x86/PMOVMSKB.html,Move Byte Mask
+PMOVSX,http://www.felixcloutier.com/x86/PMOVSX.html,Packed Move with Sign Extend
+PMOVZX,http://www.felixcloutier.com/x86/PMOVZX.html,Packed Move with Zero Extend
+PMULDQ,http://www.felixcloutier.com/x86/PMULDQ.html,Multiply Packed Signed Dword Integers
+PMULHRSW,http://www.felixcloutier.com/x86/PMULHRSW.html,Packed Multiply High with Round and Scale
+PMULHUW,http://www.felixcloutier.com/x86/PMULHUW.html,Multiply Packed Unsigned Integers and Store High Result
+PMULHW,http://www.felixcloutier.com/x86/PMULHW.html,Multiply Packed Signed Integers and Store High Result
+PMULLD,http://www.felixcloutier.com/x86/PMULLD.html,Multiply Packed Signed Dword Integers and Store Low Result
+PMULLW,http://www.felixcloutier.com/x86/PMULLW.html,Multiply Packed Signed Integers and Store Low Result
+PMULUDQ,http://www.felixcloutier.com/x86/PMULUDQ.html,Multiply Packed Unsigned Doubleword Integers
+POP,http://www.felixcloutier.com/x86/POP.html,Pop a Value from the Stack
+POPA,http://www.felixcloutier.com/x86/POPA:POPAD.html,Pop All General-Purpose Registers
+POPAD,http://www.felixcloutier.com/x86/POPA:POPAD.html,Pop All General-Purpose Registers
+POPCNT,http://www.felixcloutier.com/x86/POPCNT.html,Return the Count of Number of Bits Set to 1
+POPF,http://www.felixcloutier.com/x86/POPF:POPFD:POPFQ.html,Pop Stack into EFLAGS Register
+POPFD,http://www.felixcloutier.com/x86/POPF:POPFD:POPFQ.html,Pop Stack into EFLAGS Register
+POPFQ,http://www.felixcloutier.com/x86/POPF:POPFD:POPFQ.html,Pop Stack into EFLAGS Register
+POR,http://www.felixcloutier.com/x86/POR.html,Bitwise Logical OR
+PREFETCHW,http://www.felixcloutier.com/x86/PREFETCHW.html,Prefetch Data into Caches in Anticipation of a Write
+PREFETCHh,http://www.felixcloutier.com/x86/PREFETCHh.html,Prefetch Data Into Caches
+PSADBW,http://www.felixcloutier.com/x86/PSADBW.html,Compute Sum of Absolute Differences
+PSHUFB,http://www.felixcloutier.com/x86/PSHUFB.html,Packed Shuffle Bytes
+PSHUFD,http://www.felixcloutier.com/x86/PSHUFD.html,Shuffle Packed Doublewords
+PSHUFHW,http://www.felixcloutier.com/x86/PSHUFHW.html,Shuffle Packed High Words
+PSHUFLW,http://www.felixcloutier.com/x86/PSHUFLW.html,Shuffle Packed Low Words
+PSHUFW,http://www.felixcloutier.com/x86/PSHUFW.html,Shuffle Packed Words
+PSIGNB,http://www.felixcloutier.com/x86/PSIGNB:PSIGNW:PSIGND.html,Packed SIGN
+PSIGNW,http://www.felixcloutier.com/x86/PSIGNB:PSIGNW:PSIGND.html,Packed SIGN
+PSIGND,http://www.felixcloutier.com/x86/PSIGNB:PSIGNW:PSIGND.html,Packed SIGN
+PSLLDQ,http://www.felixcloutier.com/x86/PSLLDQ.html,Shift Double Quadword Left Logical
+PSLLW,http://www.felixcloutier.com/x86/PSLLW:PSLLD:PSLLQ.html,Shift Packed Data Left Logical
+PSLLD,http://www.felixcloutier.com/x86/PSLLW:PSLLD:PSLLQ.html,Shift Packed Data Left Logical
+PSLLQ,http://www.felixcloutier.com/x86/PSLLW:PSLLD:PSLLQ.html,Shift Packed Data Left Logical
+PSRAW,http://www.felixcloutier.com/x86/PSRAW:PSRAD.html,Shift Packed Data Right Arithmetic
+PSRAD,http://www.felixcloutier.com/x86/PSRAW:PSRAD.html,Shift Packed Data Right Arithmetic
+PSRLDQ,http://www.felixcloutier.com/x86/PSRLDQ.html,Shift Double Quadword Right Logical
+PSRLW,http://www.felixcloutier.com/x86/PSRLW:PSRLD:PSRLQ.html,Shift Packed Data Right Logical
+PSRLD,http://www.felixcloutier.com/x86/PSRLW:PSRLD:PSRLQ.html,Shift Packed Data Right Logical
+PSRLQ,http://www.felixcloutier.com/x86/PSRLW:PSRLD:PSRLQ.html,Shift Packed Data Right Logical
+PSUBB,http://www.felixcloutier.com/x86/PSUBB:PSUBW:PSUBD.html,Subtract Packed Integers
+PSUBW,http://www.felixcloutier.com/x86/PSUBB:PSUBW:PSUBD.html,Subtract Packed Integers
+PSUBD,http://www.felixcloutier.com/x86/PSUBB:PSUBW:PSUBD.html,Subtract Packed Integers
+PSUBQ,http://www.felixcloutier.com/x86/PSUBQ.html,Subtract Packed Quadword Integers
+PSUBSB,http://www.felixcloutier.com/x86/PSUBSB:PSUBSW.html,Subtract Packed Signed Integers with Signed Saturation
+PSUBSW,http://www.felixcloutier.com/x86/PSUBSB:PSUBSW.html,Subtract Packed Signed Integers with Signed Saturation
+PSUBUSB,http://www.felixcloutier.com/x86/PSUBUSB:PSUBUSW.html,Subtract Packed Unsigned Integers with Unsigned Saturation
+PSUBUSW,http://www.felixcloutier.com/x86/PSUBUSB:PSUBUSW.html,Subtract Packed Unsigned Integers with Unsigned Saturation
+PTEST,http://www.felixcloutier.com/x86/PTEST-%20Logical%20Compare.html,Logical Compare
+PUNPCKHBW,http://www.felixcloutier.com/x86/PUNPCKHBW:PUNPCKHWD:PUNPCKHDQ:PUNPCKHQDQ.html,Unpack High Data
+PUNPCKHWD,http://www.felixcloutier.com/x86/PUNPCKHBW:PUNPCKHWD:PUNPCKHDQ:PUNPCKHQDQ.html,Unpack High Data
+PUNPCKHDQ,http://www.felixcloutier.com/x86/PUNPCKHBW:PUNPCKHWD:PUNPCKHDQ:PUNPCKHQDQ.html,Unpack High Data
+PUNPCKHQDQ,http://www.felixcloutier.com/x86/PUNPCKHBW:PUNPCKHWD:PUNPCKHDQ:PUNPCKHQDQ.html,Unpack High Data
+PUNPCKLBW,http://www.felixcloutier.com/x86/PUNPCKLBW:PUNPCKLWD:PUNPCKLDQ:PUNPCKLQDQ.html,Unpack Low Data
+PUNPCKLWD,http://www.felixcloutier.com/x86/PUNPCKLBW:PUNPCKLWD:PUNPCKLDQ:PUNPCKLQDQ.html,Unpack Low Data
+PUNPCKLDQ,http://www.felixcloutier.com/x86/PUNPCKLBW:PUNPCKLWD:PUNPCKLDQ:PUNPCKLQDQ.html,Unpack Low Data
+PUNPCKLQDQ,http://www.felixcloutier.com/x86/PUNPCKLBW:PUNPCKLWD:PUNPCKLDQ:PUNPCKLQDQ.html,Unpack Low Data
+PUSH,http://www.felixcloutier.com/x86/PUSH.html,Push Word, Doubleword or Quadword Onto the Stack
+PUSHA,http://www.felixcloutier.com/x86/PUSHA:PUSHAD.html,Push All General-Purpose Registers
+PUSHAD,http://www.felixcloutier.com/x86/PUSHA:PUSHAD.html,Push All General-Purpose Registers
+PUSHF,http://www.felixcloutier.com/x86/PUSHF:PUSHFD.html,Push EFLAGS Register onto the Stack
+PUSHFD,http://www.felixcloutier.com/x86/PUSHF:PUSHFD.html,Push EFLAGS Register onto the Stack
+PXOR,http://www.felixcloutier.com/x86/PXOR.html,Logical Exclusive OR
+RCL,http://www.felixcloutier.com/x86/RCL:RCR:ROL:ROR-.html,Rotate
+RCR,http://www.felixcloutier.com/x86/RCL:RCR:ROL:ROR-.html,Rotate
+ROL,http://www.felixcloutier.com/x86/RCL:RCR:ROL:ROR-.html,Rotate
+ROR,http://www.felixcloutier.com/x86/RCL:RCR:ROL:ROR-.html,Rotate
+RCPPS,http://www.felixcloutier.com/x86/RCPPS.html,Compute Reciprocals of Packed Single-Precision Floating-Point Values
+RCPSS,http://www.felixcloutier.com/x86/RCPSS.html,Compute Reciprocal of Scalar Single-Precision Floating-Point Values
+RDFSBASE,http://www.felixcloutier.com/x86/RDFSBASE:RDGSBASE.html,Read FS/GS Segment Base
+RDGSBASE,http://www.felixcloutier.com/x86/RDFSBASE:RDGSBASE.html,Read FS/GS Segment Base
+RDMSR,http://www.felixcloutier.com/x86/RDMSR.html,Read from Model Specific Register
+RDPMC,http://www.felixcloutier.com/x86/RDPMC.html,Read Performance-Monitoring Counters
+RDRAND,http://www.felixcloutier.com/x86/RDRAND.html,Read Random Number
+RDTSC,http://www.felixcloutier.com/x86/RDTSC.html,Read Time-Stamp Counter
+RDTSCP,http://www.felixcloutier.com/x86/RDTSCP.html,Read Time-Stamp Counter and Processor ID
+REP,http://www.felixcloutier.com/x86/REP:REPE:REPZ:REPNE:REPNZ.html,Repeat String Operation Prefix
+REPE,http://www.felixcloutier.com/x86/REP:REPE:REPZ:REPNE:REPNZ.html,Repeat String Operation Prefix
+REPZ,http://www.felixcloutier.com/x86/REP:REPE:REPZ:REPNE:REPNZ.html,Repeat String Operation Prefix
+REPNE,http://www.felixcloutier.com/x86/REP:REPE:REPZ:REPNE:REPNZ.html,Repeat String Operation Prefix
+REPNZ,http://www.felixcloutier.com/x86/REP:REPE:REPZ:REPNE:REPNZ.html,Repeat String Operation Prefix
+RET,http://www.felixcloutier.com/x86/RET.html,Return from Procedure
+RORX,http://www.felixcloutier.com/x86/RORX.html,Rotate Right Logical Without Affecting Flags
+ROUNDPD,http://www.felixcloutier.com/x86/ROUNDPD.html,Round Packed Double Precision Floating-Point Values
+ROUNDPS,http://www.felixcloutier.com/x86/ROUNDPS.html,Round Packed Single Precision Floating-Point Values
+ROUNDSD,http://www.felixcloutier.com/x86/ROUNDSD.html,Round Scalar Double Precision Floating-Point Values
+ROUNDSS,http://www.felixcloutier.com/x86/ROUNDSS.html,Round Scalar Single Precision Floating-Point Values
+RSM,http://www.felixcloutier.com/x86/RSM.html,Resume from System Management Mode
+RSQRTPS,http://www.felixcloutier.com/x86/RSQRTPS.html,Compute Reciprocals of Square Roots of Packed Single-Precision Floating-Point Values
+RSQRTSS,http://www.felixcloutier.com/x86/RSQRTSS.html,Compute Reciprocal of Square Root of Scalar Single-Precision Floating-Point Value
+SAHF,http://www.felixcloutier.com/x86/SAHF.html,Store AH into Flags
+SAL,http://www.felixcloutier.com/x86/SAL:SAR:SHL:SHR.html,Shift
+SAR,http://www.felixcloutier.com/x86/SAL:SAR:SHL:SHR.html,Shift
+SHL,http://www.felixcloutier.com/x86/SAL:SAR:SHL:SHR.html,Shift
+SHR,http://www.felixcloutier.com/x86/SAL:SAR:SHL:SHR.html,Shift
+SARX,http://www.felixcloutier.com/x86/SARX:SHLX:SHRX.html,Shift Without Affecting Flags
+SHLX,http://www.felixcloutier.com/x86/SARX:SHLX:SHRX.html,Shift Without Affecting Flags
+SHRX,http://www.felixcloutier.com/x86/SARX:SHLX:SHRX.html,Shift Without Affecting Flags
+SBB,http://www.felixcloutier.com/x86/SBB.html,Integer Subtraction with Borrow
+SCAS,http://www.felixcloutier.com/x86/SCAS:SCASB:SCASW:SCASD.html,Scan String
+SCASB,http://www.felixcloutier.com/x86/SCAS:SCASB:SCASW:SCASD.html,Scan String
+SCASW,http://www.felixcloutier.com/x86/SCAS:SCASB:SCASW:SCASD.html,Scan String
+SCASD,http://www.felixcloutier.com/x86/SCAS:SCASB:SCASW:SCASD.html,Scan String
+SETcc,http://www.felixcloutier.com/x86/SETcc.html,Set Byte on Condition
+SFENCE,http://www.felixcloutier.com/x86/SFENCE.html,Store Fence
+SGDT,http://www.felixcloutier.com/x86/SGDT.html,Store Global Descriptor Table Register
+SHLD,http://www.felixcloutier.com/x86/SHLD.html,Double Precision Shift Left
+SHRD,http://www.felixcloutier.com/x86/SHRD.html,Double Precision Shift Right
+SHUFPD,http://www.felixcloutier.com/x86/SHUFPD.html,Shuffle Packed Double-Precision Floating-Point Values
+SHUFPS,http://www.felixcloutier.com/x86/SHUFPS.html,Shuffle Packed Single-Precision Floating-Point Values
+SIDT,http://www.felixcloutier.com/x86/SIDT.html,Store Interrupt Descriptor Table Register
+SLDT,http://www.felixcloutier.com/x86/SLDT.html,Store Local Descriptor Table Register
+SMSW,http://www.felixcloutier.com/x86/SMSW.html,Store Machine Status Word
+SQRTPD,http://www.felixcloutier.com/x86/SQRTPD.html,Compute Square Roots of Packed Double-Precision Floating-Point Values
+SQRTPS,http://www.felixcloutier.com/x86/SQRTPS.html,Compute Square Roots of Packed Single-Precision Floating-Point Values
+SQRTSD,http://www.felixcloutier.com/x86/SQRTSD.html,Compute Square Root of Scalar Double-Precision Floating-Point Value
+SQRTSS,http://www.felixcloutier.com/x86/SQRTSS.html,Compute Square Root of Scalar Single-Precision Floating-Point Value
+STC,http://www.felixcloutier.com/x86/STC.html,Set Carry Flag
+STD,http://www.felixcloutier.com/x86/STD.html,Set Direction Flag
+STI,http://www.felixcloutier.com/x86/STI.html,Set Interrupt Flag
+STMXCSR,http://www.felixcloutier.com/x86/STMXCSR.html,Store MXCSR Register State
+STOS,http://www.felixcloutier.com/x86/STOS:STOSB:STOSW:STOSD:STOSQ.html,Store String
+STOSB,http://www.felixcloutier.com/x86/STOS:STOSB:STOSW:STOSD:STOSQ.html,Store String
+STOSW,http://www.felixcloutier.com/x86/STOS:STOSB:STOSW:STOSD:STOSQ.html,Store String
+STOSD,http://www.felixcloutier.com/x86/STOS:STOSB:STOSW:STOSD:STOSQ.html,Store String
+STOSQ,http://www.felixcloutier.com/x86/STOS:STOSB:STOSW:STOSD:STOSQ.html,Store String
+STR,http://www.felixcloutier.com/x86/STR.html,Store Task Register
+SUB,http://www.felixcloutier.com/x86/SUB.html,Subtract
+SUBPD,http://www.felixcloutier.com/x86/SUBPD.html,Subtract Packed Double-Precision Floating-Point Values
+SUBPS,http://www.felixcloutier.com/x86/SUBPS.html,Subtract Packed Single-Precision Floating-Point Values
+SUBSD,http://www.felixcloutier.com/x86/SUBSD.html,Subtract Scalar Double-Precision Floating-Point Values
+SUBSS,http://www.felixcloutier.com/x86/SUBSS.html,Subtract Scalar Single-Precision Floating-Point Values
+SWAPGS,http://www.felixcloutier.com/x86/SWAPGS.html,Swap GS Base Register
+SYSCALL,http://www.felixcloutier.com/x86/SYSCALL.html,Fast System Call
+SYSENTER,http://www.felixcloutier.com/x86/SYSENTER.html,Fast System Call
+SYSEXIT,http://www.felixcloutier.com/x86/SYSEXIT.html,Fast Return from Fast System Call
+SYSRET,http://www.felixcloutier.com/x86/SYSRET.html,Return From Fast System Call
+TEST,http://www.felixcloutier.com/x86/TEST.html,Logical Compare
+TZCNT,http://www.felixcloutier.com/x86/TZCNT.html,Count the Number of Trailing Zero Bits
+UCOMISD,http://www.felixcloutier.com/x86/UCOMISD.html,Unordered Compare Scalar Double-Precision Floating-Point Values and Set EFLAGS
+UCOMISS,http://www.felixcloutier.com/x86/UCOMISS.html,Unordered Compare Scalar Single-Precision Floating-Point Values and Set EFLAGS
+UD2,http://www.felixcloutier.com/x86/UD2.html,Undefined Instruction
+UNPCKHPD,http://www.felixcloutier.com/x86/UNPCKHPD.html,Unpack and Interleave High Packed Double-Precision Floating-Point Values
+UNPCKHPS,http://www.felixcloutier.com/x86/UNPCKHPS.html,Unpack and Interleave High Packed Single-Precision Floating-Point Values
+UNPCKLPD,http://www.felixcloutier.com/x86/UNPCKLPD.html,Unpack and Interleave Low Packed Double-Precision Floating-Point Values
+UNPCKLPS,http://www.felixcloutier.com/x86/UNPCKLPS.html,Unpack and Interleave Low Packed Single-Precision Floating-Point Values
+VBROADCAST,http://www.felixcloutier.com/x86/VBROADCAST.html,Broadcast Floating-Point Data
+VCVTPH2PS,http://www.felixcloutier.com/x86/VCVTPH2PS.html,Convert 16-bit FP Values to Single-Precision FP Values
+VCVTPS2PH,http://www.felixcloutier.com/x86/VCVTPS2PH.html,Convert Single-Precision FP value to 16-bit FP value
+VERR,http://www.felixcloutier.com/x86/VERR:VERW.html,Verify a Segment for Reading or Writing
+VERW,http://www.felixcloutier.com/x86/VERR:VERW.html,Verify a Segment for Reading or Writing
+VEXTRACTF128,http://www.felixcloutier.com/x86/VEXTRACTF128.html,Extract Packed Floating-Point Values
+VEXTRACTI128,http://www.felixcloutier.com/x86/VEXTRACTI128.html,Extract packed Integer Values
+VFMADD132PD,http://www.felixcloutier.com/x86/VFMADD132PD:VFMADD213PD:VFMADD231PD.html,Fused Multiply-Add of Packed DoublePrecision Floating-Point Values
+VFMADD213PD,http://www.felixcloutier.com/x86/VFMADD132PD:VFMADD213PD:VFMADD231PD.html,Fused Multiply-Add of Packed DoublePrecision Floating-Point Values
+VFMADD231PD,http://www.felixcloutier.com/x86/VFMADD132PD:VFMADD213PD:VFMADD231PD.html,Fused Multiply-Add of Packed DoublePrecision Floating-Point Values
+VFMADD132PS,http://www.felixcloutier.com/x86/VFMADD132PS:VFMADD213PS:VFMADD231PS.html,Fused Multiply-Add of Packed SinglePrecision Floating-Point Values
+VFMADD213PS,http://www.felixcloutier.com/x86/VFMADD132PS:VFMADD213PS:VFMADD231PS.html,Fused Multiply-Add of Packed SinglePrecision Floating-Point Values
+VFMADD231PS,http://www.felixcloutier.com/x86/VFMADD132PS:VFMADD213PS:VFMADD231PS.html,Fused Multiply-Add of Packed SinglePrecision Floating-Point Values
+VFMADD132SD,http://www.felixcloutier.com/x86/VFMADD132SD:VFMADD213SD:VFMADD231SD.html,Fused Multiply-Add of Scalar DoublePrecision Floating-Point Values
+VFMADD213SD,http://www.felixcloutier.com/x86/VFMADD132SD:VFMADD213SD:VFMADD231SD.html,Fused Multiply-Add of Scalar DoublePrecision Floating-Point Values
+VFMADD231SD,http://www.felixcloutier.com/x86/VFMADD132SD:VFMADD213SD:VFMADD231SD.html,Fused Multiply-Add of Scalar DoublePrecision Floating-Point Values
+VFMADD132SS,http://www.felixcloutier.com/x86/VFMADD132SS:VFMADD213SS:VFMADD231SS.html,Fused Multiply-Add of Scalar Single-Precision Floating-Point Values
+VFMADD213SS,http://www.felixcloutier.com/x86/VFMADD132SS:VFMADD213SS:VFMADD231SS.html,Fused Multiply-Add of Scalar Single-Precision Floating-Point Values
+VFMADD231SS,http://www.felixcloutier.com/x86/VFMADD132SS:VFMADD213SS:VFMADD231SS.html,Fused Multiply-Add of Scalar Single-Precision Floating-Point Values
+VFMADDSUB132PD,http://www.felixcloutier.com/x86/VFMADDSUB132PD:VFMADDSUB213PD:VFMADDSUB231PD.html,Fused Multiply-Alternating Add/Subtract of Packed Double-Precision Floating-Point Values
+VFMADDSUB213PD,http://www.felixcloutier.com/x86/VFMADDSUB132PD:VFMADDSUB213PD:VFMADDSUB231PD.html,Fused Multiply-Alternating Add/Subtract of Packed Double-Precision Floating-Point Values
+VFMADDSUB231PD,http://www.felixcloutier.com/x86/VFMADDSUB132PD:VFMADDSUB213PD:VFMADDSUB231PD.html,Fused Multiply-Alternating Add/Subtract of Packed Double-Precision Floating-Point Values
+VFMADDSUB132PS,http://www.felixcloutier.com/x86/VFMADDSUB132PS:VFMADDSUB213PS:VFMADDSUB231PS.html,Fused Multiply-Alternating Add/Subtract of Packed Single-Precision Floating-Point Values
+VFMADDSUB213PS,http://www.felixcloutier.com/x86/VFMADDSUB132PS:VFMADDSUB213PS:VFMADDSUB231PS.html,Fused Multiply-Alternating Add/Subtract of Packed Single-Precision Floating-Point Values
+VFMADDSUB231PS,http://www.felixcloutier.com/x86/VFMADDSUB132PS:VFMADDSUB213PS:VFMADDSUB231PS.html,Fused Multiply-Alternating Add/Subtract of Packed Single-Precision Floating-Point Values
+VFMSUB132PD,http://www.felixcloutier.com/x86/VFMSUB132PD:VFMSUB213PD:VFMSUB231PD.html,Fused Multiply-Subtract of Packed DoublePrecision Floating-Point Values
+VFMSUB213PD,http://www.felixcloutier.com/x86/VFMSUB132PD:VFMSUB213PD:VFMSUB231PD.html,Fused Multiply-Subtract of Packed DoublePrecision Floating-Point Values
+VFMSUB231PD,http://www.felixcloutier.com/x86/VFMSUB132PD:VFMSUB213PD:VFMSUB231PD.html,Fused Multiply-Subtract of Packed DoublePrecision Floating-Point Values
+VFMSUB132PS,http://www.felixcloutier.com/x86/VFMSUB132PS:VFMSUB213PS:VFMSUB231PS.html,Fused Multiply-Subtract of Packed SinglePrecision Floating-Point Values
+VFMSUB213PS,http://www.felixcloutier.com/x86/VFMSUB132PS:VFMSUB213PS:VFMSUB231PS.html,Fused Multiply-Subtract of Packed SinglePrecision Floating-Point Values
+VFMSUB231PS,http://www.felixcloutier.com/x86/VFMSUB132PS:VFMSUB213PS:VFMSUB231PS.html,Fused Multiply-Subtract of Packed SinglePrecision Floating-Point Values
+VFMSUB132SD,http://www.felixcloutier.com/x86/VFMSUB132SD:VFMSUB213SD:VFMSUB231SD.html,Fused Multiply-Subtract of Scalar DoublePrecision Floating-Point Values
+VFMSUB213SD,http://www.felixcloutier.com/x86/VFMSUB132SD:VFMSUB213SD:VFMSUB231SD.html,Fused Multiply-Subtract of Scalar DoublePrecision Floating-Point Values
+VFMSUB231SD,http://www.felixcloutier.com/x86/VFMSUB132SD:VFMSUB213SD:VFMSUB231SD.html,Fused Multiply-Subtract of Scalar DoublePrecision Floating-Point Values
+VFMSUB132SS,http://www.felixcloutier.com/x86/VFMSUB132SS:VFMSUB213SS:VFMSUB231SS.html,Fused Multiply-Subtract of Scalar SinglePrecision Floating-Point Values
+VFMSUB213SS,http://www.felixcloutier.com/x86/VFMSUB132SS:VFMSUB213SS:VFMSUB231SS.html,Fused Multiply-Subtract of Scalar SinglePrecision Floating-Point Values
+VFMSUB231SS,http://www.felixcloutier.com/x86/VFMSUB132SS:VFMSUB213SS:VFMSUB231SS.html,Fused Multiply-Subtract of Scalar SinglePrecision Floating-Point Values
+VFMSUBADD132PD,http://www.felixcloutier.com/x86/VFMSUBADD132PD:VFMSUBADD213PD:VFMSUBADD231PD.html,Fused Multiply-Alternating Subtract/Add of Packed Double-Precision Floating-Point Values
+VFMSUBADD213PD,http://www.felixcloutier.com/x86/VFMSUBADD132PD:VFMSUBADD213PD:VFMSUBADD231PD.html,Fused Multiply-Alternating Subtract/Add of Packed Double-Precision Floating-Point Values
+VFMSUBADD231PD,http://www.felixcloutier.com/x86/VFMSUBADD132PD:VFMSUBADD213PD:VFMSUBADD231PD.html,Fused Multiply-Alternating Subtract/Add of Packed Double-Precision Floating-Point Values
+VFMSUBADD132PS,http://www.felixcloutier.com/x86/VFMSUBADD132PS:VFMSUBADD213PS:VFMSUBADD231PS.html,Fused Multiply-Alternating Subtract/Add of Packed Single-Precision Floating-Point Values
+VFMSUBADD213PS,http://www.felixcloutier.com/x86/VFMSUBADD132PS:VFMSUBADD213PS:VFMSUBADD231PS.html,Fused Multiply-Alternating Subtract/Add of Packed Single-Precision Floating-Point Values
+VFMSUBADD231PS,http://www.felixcloutier.com/x86/VFMSUBADD132PS:VFMSUBADD213PS:VFMSUBADD231PS.html,Fused Multiply-Alternating Subtract/Add of Packed Single-Precision Floating-Point Values
+VFNMADD132PD,http://www.felixcloutier.com/x86/VFNMADD132PD:VFNMADD213PD:VFNMADD231PD.html,Fused Negative Multiply-Add of Packed Double-Precision Floating-Point Values
+VFNMADD213PD,http://www.felixcloutier.com/x86/VFNMADD132PD:VFNMADD213PD:VFNMADD231PD.html,Fused Negative Multiply-Add of Packed Double-Precision Floating-Point Values
+VFNMADD231PD,http://www.felixcloutier.com/x86/VFNMADD132PD:VFNMADD213PD:VFNMADD231PD.html,Fused Negative Multiply-Add of Packed Double-Precision Floating-Point Values
+VFNMADD132PS,http://www.felixcloutier.com/x86/VFNMADD132PS:VFNMADD213PS:VFNMADD231PS.html,Fused Negative Multiply-Add of Packed Single-Precision Floating-Point Values
+VFNMADD213PS,http://www.felixcloutier.com/x86/VFNMADD132PS:VFNMADD213PS:VFNMADD231PS.html,Fused Negative Multiply-Add of Packed Single-Precision Floating-Point Values
+VFNMADD231PS,http://www.felixcloutier.com/x86/VFNMADD132PS:VFNMADD213PS:VFNMADD231PS.html,Fused Negative Multiply-Add of Packed Single-Precision Floating-Point Values
+VFNMADD132SD,http://www.felixcloutier.com/x86/VFNMADD132SD:VFNMADD213SD:VFNMADD231SD.html,Fused Negative Multiply-Add of Scalar Double-Precision Floating-Point Values
+VFNMADD213SD,http://www.felixcloutier.com/x86/VFNMADD132SD:VFNMADD213SD:VFNMADD231SD.html,Fused Negative Multiply-Add of Scalar Double-Precision Floating-Point Values
+VFNMADD231SD,http://www.felixcloutier.com/x86/VFNMADD132SD:VFNMADD213SD:VFNMADD231SD.html,Fused Negative Multiply-Add of Scalar Double-Precision Floating-Point Values
+VFNMADD132SS,http://www.felixcloutier.com/x86/VFNMADD132SS:VFNMADD213SS:VFNMADD231SS.html,Fused Negative Multiply-Add of Scalar Single-Precision Floating-Point Values
+VFNMADD213SS,http://www.felixcloutier.com/x86/VFNMADD132SS:VFNMADD213SS:VFNMADD231SS.html,Fused Negative Multiply-Add of Scalar Single-Precision Floating-Point Values
+VFNMADD231SS,http://www.felixcloutier.com/x86/VFNMADD132SS:VFNMADD213SS:VFNMADD231SS.html,Fused Negative Multiply-Add of Scalar Single-Precision Floating-Point Values
+VFNMSUB132PD,http://www.felixcloutier.com/x86/VFNMSUB132PD:VFNMSUB213PD:VFNMSUB231PD.html,Fused Negative Multiply-Subtract of Packed Double-Precision Floating-Point Values
+VFNMSUB213PD,http://www.felixcloutier.com/x86/VFNMSUB132PD:VFNMSUB213PD:VFNMSUB231PD.html,Fused Negative Multiply-Subtract of Packed Double-Precision Floating-Point Values
+VFNMSUB231PD,http://www.felixcloutier.com/x86/VFNMSUB132PD:VFNMSUB213PD:VFNMSUB231PD.html,Fused Negative Multiply-Subtract of Packed Double-Precision Floating-Point Values
+VFNMSUB132PS,http://www.felixcloutier.com/x86/VFNMSUB132PS:VFNMSUB213PS:VFNMSUB231PS.html,Fused Negative Multiply-Subtract of Packed Single-Precision Floating-Point Values
+VFNMSUB213PS,http://www.felixcloutier.com/x86/VFNMSUB132PS:VFNMSUB213PS:VFNMSUB231PS.html,Fused Negative Multiply-Subtract of Packed Single-Precision Floating-Point Values
+VFNMSUB231PS,http://www.felixcloutier.com/x86/VFNMSUB132PS:VFNMSUB213PS:VFNMSUB231PS.html,Fused Negative Multiply-Subtract of Packed Single-Precision Floating-Point Values
+VFNMSUB132SD,http://www.felixcloutier.com/x86/VFNMSUB132SD:VFNMSUB213SD:VFNMSUB231SD.html,Fused Negative Multiply-Subtract of Scalar Double-Precision Floating-Point Values
+VFNMSUB213SD,http://www.felixcloutier.com/x86/VFNMSUB132SD:VFNMSUB213SD:VFNMSUB231SD.html,Fused Negative Multiply-Subtract of Scalar Double-Precision Floating-Point Values
+VFNMSUB231SD,http://www.felixcloutier.com/x86/VFNMSUB132SD:VFNMSUB213SD:VFNMSUB231SD.html,Fused Negative Multiply-Subtract of Scalar Double-Precision Floating-Point Values
+VFNMSUB132SS,http://www.felixcloutier.com/x86/VFNMSUB132SS:VFNMSUB213SS:VFNMSUB231SS.html,Fused Negative Multiply-Subtract of Scalar Single-Precision Floating-Point Values
+VFNMSUB213SS,http://www.felixcloutier.com/x86/VFNMSUB132SS:VFNMSUB213SS:VFNMSUB231SS.html,Fused Negative Multiply-Subtract of Scalar Single-Precision Floating-Point Values
+VFNMSUB231SS,http://www.felixcloutier.com/x86/VFNMSUB132SS:VFNMSUB213SS:VFNMSUB231SS.html,Fused Negative Multiply-Subtract of Scalar Single-Precision Floating-Point Values
+VGATHERDPD,http://www.felixcloutier.com/x86/VGATHERDPD:VGATHERQPD.html,Gather Packed DP FP Values Using Signed Dword/Qword Indices
+VGATHERQPD,http://www.felixcloutier.com/x86/VGATHERDPD:VGATHERQPD.html,Gather Packed DP FP Values Using Signed Dword/Qword Indices
+VGATHERDPS,http://www.felixcloutier.com/x86/VGATHERDPS:VGATHERQPS.html,Gather Packed SP FP values Using Signed Dword/Qword Indices
+VGATHERQPS,http://www.felixcloutier.com/x86/VGATHERDPS:VGATHERQPS.html,Gather Packed SP FP values Using Signed Dword/Qword Indices
+VINSERTF128,http://www.felixcloutier.com/x86/VINSERTF128.html,Insert Packed Floating-Point Values
+VINSERTI128,http://www.felixcloutier.com/x86/VINSERTI128.html,Insert Packed Integer Values
+VMASKMOV,http://www.felixcloutier.com/x86/VMASKMOV.html,Conditional SIMD Packed Loads and Stores
+VPBLENDD,http://www.felixcloutier.com/x86/VPBLENDD.html,Blend Packed Dwords
+VPBROADCAST,http://www.felixcloutier.com/x86/VPBROADCAST.html,Broadcast Integer Data
+VPERM2F128,http://www.felixcloutier.com/x86/VPERM2F128.html,Permute Floating-Point Values
+VPERM2I128,http://www.felixcloutier.com/x86/VPERM2I128.html,Permute Integer Values
+VPERMD,http://www.felixcloutier.com/x86/VPERMD.html,Full Doublewords Element Permutation
+VPERMILPD,http://www.felixcloutier.com/x86/VPERMILPD.html,Permute Double-Precision Floating-Point Values
+VPERMILPS,http://www.felixcloutier.com/x86/VPERMILPS.html,Permute Single-Precision Floating-Point Values
+VPERMPD,http://www.felixcloutier.com/x86/VPERMPD.html,Permute Double-Precision Floating-Point Elements
+VPERMPS,http://www.felixcloutier.com/x86/VPERMPS.html,Permute Single-Precision Floating-Point Elements
+VPERMQ,http://www.felixcloutier.com/x86/VPERMQ.html,Qwords Element Permutation
+VPGATHERDD,http://www.felixcloutier.com/x86/VPGATHERDD:VPGATHERQD.html,Gather Packed Dword Values Using Signed Dword/Qword Indices
+VPGATHERQD,http://www.felixcloutier.com/x86/VPGATHERDD:VPGATHERQD.html,Gather Packed Dword Values Using Signed Dword/Qword Indices
+VPGATHERDQ,http://www.felixcloutier.com/x86/VPGATHERDQ:VPGATHERQQ.html,Gather Packed Qword Values Using Signed Dword/Qword Indices
+VPGATHERQQ,http://www.felixcloutier.com/x86/VPGATHERDQ:VPGATHERQQ.html,Gather Packed Qword Values Using Signed Dword/Qword Indices
+VPMASKMOV,http://www.felixcloutier.com/x86/VPMASKMOV.html,Conditional SIMD Integer Packed Loads and Stores
+VPSLLVD,http://www.felixcloutier.com/x86/VPSLLVD:VPSLLVQ.html,Variable Bit Shift Left Logical
+VPSLLVQ,http://www.felixcloutier.com/x86/VPSLLVD:VPSLLVQ.html,Variable Bit Shift Left Logical
+VPSRAVD,http://www.felixcloutier.com/x86/VPSRAVD.html,Variable Bit Shift Right Arithmetic
+VPSRLVD,http://www.felixcloutier.com/x86/VPSRLVD:VPSRLVQ.html,Variable Bit Shift Right Logical
+VPSRLVQ,http://www.felixcloutier.com/x86/VPSRLVD:VPSRLVQ.html,Variable Bit Shift Right Logical
+VTESTPD,http://www.felixcloutier.com/x86/VTESTPD:VTESTPS.html,Packed Bit Test
+VTESTPS,http://www.felixcloutier.com/x86/VTESTPD:VTESTPS.html,Packed Bit Test
+VZEROALL,http://www.felixcloutier.com/x86/VZEROALL.html,Zero All YMM Registers
+VZEROUPPER,http://www.felixcloutier.com/x86/VZEROUPPER.html,Zero Upper Bits of YMM Registers
+WAIT,http://www.felixcloutier.com/x86/WAIT:FWAIT.html,Wait
+FWAIT,http://www.felixcloutier.com/x86/WAIT:FWAIT.html,Wait
+WBINVD,http://www.felixcloutier.com/x86/WBINVD.html,Write Back and Invalidate Cache
+WRFSBASE,http://www.felixcloutier.com/x86/WRFSBASE:WRGSBASE.html,Write FS/GS Segment Base
+WRGSBASE,http://www.felixcloutier.com/x86/WRFSBASE:WRGSBASE.html,Write FS/GS Segment Base
+WRMSR,http://www.felixcloutier.com/x86/WRMSR.html,Write to Model Specific Register
+XABORT,http://www.felixcloutier.com/x86/XABORT.html,Transactional Abort
+XACQUIRE,http://www.felixcloutier.com/x86/XACQUIRE:XRELEASE.html,Hardware Lock Elision Prefix Hints
+XRELEASE,http://www.felixcloutier.com/x86/XACQUIRE:XRELEASE.html,Hardware Lock Elision Prefix Hints
+XADD,http://www.felixcloutier.com/x86/XADD.html,Exchange and Add
+XBEGIN,http://www.felixcloutier.com/x86/XBEGIN.html,Transactional Begin
+XCHG,http://www.felixcloutier.com/x86/XCHG.html,Exchange Register/Memory with Register
+XEND,http://www.felixcloutier.com/x86/XEND.html,Transactional End
+XGETBV,http://www.felixcloutier.com/x86/XGETBV.html,Get Value of Extended Control Register
+XLAT,http://www.felixcloutier.com/x86/XLAT:XLATB.html,Table Look-up Translation
+XLATB,http://www.felixcloutier.com/x86/XLAT:XLATB.html,Table Look-up Translation
+XOR,http://www.felixcloutier.com/x86/XOR.html,Logical Exclusive OR
+XORPD,http://www.felixcloutier.com/x86/XORPD.html,Bitwise Logical XOR for Double-Precision Floating-Point Values
+XORPS,http://www.felixcloutier.com/x86/XORPS.html,Bitwise Logical XOR for Single-Precision Floating-Point Values
+XRSTOR,http://www.felixcloutier.com/x86/XRSTOR.html,Restore Processor Extended States
+XRSTORS,http://www.felixcloutier.com/x86/XRSTORS.html,Restore Processor Extended States Supervisor
+XSAVE,http://www.felixcloutier.com/x86/XSAVE.html,Save Processor Extended States
+XSAVEC,http://www.felixcloutier.com/x86/XSAVEC.html,Save Processor Extended States with Compaction
+XSAVEOPT,http://www.felixcloutier.com/x86/XSAVEOPT.html,Save Processor Extended States Optimized
+XSAVES,http://www.felixcloutier.com/x86/XSAVES.html,Save Processor Extended States Supervisor
+XSETBV,http://www.felixcloutier.com/x86/XSETBV.html,Set Extended Control Register
+XTEST,http://www.felixcloutier.com/x86/XTEST.html,Test If In Transactional Execution

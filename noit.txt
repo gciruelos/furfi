@@ -1,0 +1,48 @@
+Si shifteas un registro XMM completo, por ejemplo con PSLLDQ, la cantidad del shifteo es de a bytes.
+PSHUFB no recibe un inmediato sino un registro xmm completo, lo hace util para reordenamientos dinamicos.
+Se puede invertir el orden de los bytes de un registro usando BSWAP.
+Si solo se quieren negar bits individuales con una mascara se puede usar XOR, lo mismo en SSE con PXOR, se va a negar solo donde haya 1s en la mascara.
+Todas las operaciones de 32 bits que pueden modificar un registro limpian la parte alta del mismo con 0s en 64 bits, esto no sucede con las de 16 bits.
+Siempre que tengas que guardar un valor temporalmente y no podes en un registro usa la pila, es la mas indicada y probablemente este en caché.
+Todas las operaciones SSE si son usadas con operandos en memoria requieren alineación a 16 bytes del operando, excepto casos especificos como MOVDQU, esta es la razon por la cual la System V ABI requiere dicha alineacion en el stack.
+En 64 bits, se puede limpiar con 0s la parte alta de un parametro de 32 bits con un MOV, OR, AND, XCHG consigo mismo. Ejemplo: mov eax, eax.
+Para setear un registro a 0 se puede usar XOR consigo mismo, tambien sirve en SSE usando PXOR. Ejemplo: xor rax, rax. pxor xmm0, xmm0.
+La instruccion LOOP puede simplificar un bucle si se usa el registro rcx como contador, automaticamente lo decrementa y solo sale del bucle si es 0.
+Las variantes de PMOVZX y PMOVSX son capaces de desempaquetar cualquier tipo de empaquetamiento de la parte baja de un registro XMM extendiendo con 0s o con el signo respectivamente, por ejemplo PMOVZXBD desempaqueta 4 bytes de la parte baja a 4 dwords extendiendo con 0s.
+Es posible facilitar la copia de grandes pedazos de memoria usando alguna variante de MOVS dentro de un bucle LOOP, asignando la cantidad a copiar en RCX y los punteros de source y dest en RSI y RDI respectivamente.
+Generalmente no es necesario crear mas de una tabla de pagina si ya hay otra identica, simplemente se apunta la entrada del directorio de paginas a dicha tabla de pagina denuevo.
+Si se necesita pushear el instruction pointer se puede hacer un CALL a la siguiente instruccion.
+En la System V ABI de 64 bits, no es obligatorio alinear el stack a 16 bytes si no se va a efectuar un CALL a otra función.
+Las operaciones aritmeticas basicas tambien setean los flags, no es necesario hacer un CMP con 0 si lo ultimo que se hizo fue un DEC o un SUB.
+Si se quiere alinear la pila a 16 bytes sin importar que, siempre se puede hacer un AND del stack pointer con -16, lo cual trunca el valor al multiplo de 16 menor mas proximo.
+Se pueden pushear los registros selectores de segmento como cualquier otro, pero eso siempre mantiene la pila alineada por mas que solo escriba 16 bits, por ejemplo en 32 bits, push cs corre el esp 4 bytes, no 2.
+Si hay ambigüedad en alguna instruccion y no se esta seguro del tamaño de un operando, siempre se puede especificar usando los prefijos DQWORD, QWORD, DWORD, WORD, y BYTE.
+En NASM si se quiere alinear alguna etiqueta a cierta cantidad de bytes, se usa la directiva ALIGN seguido de la cantidad de bytes que se pretende que este alineado, util para datos en SSE.
+En la System V ABI no es necesario pushear todos los registros de preserva al comienzo de una funcion, sino solo los que vas a modificar, incluso si haces CALLs a otras funciones desconocidas.
+La System V ABI de x86 (32 bits) tiene diferentes registros de preserva con respecto a 64 bits, lo mismo con los registros que no importan, mas info acá http://wiki.osdev.org/Calling_Convention.
+Si estas en una rutina de interrupción, la System V ABI NO ES VIGENTE, cualquier registro que pises podría ser fatal, en 32 bits PUSHAD y POPAD son la mejor opción para pushear y popear todo.
+Evitá los accesos a memoria, es mejor hacer multiples operaciones entre registros que un acceso a memoria, esto cuenta a los PUSH y POP.
+Si necesitas una condición donde tenes que chequear el estado de un bit, podes usar TEST lo cual al contrario de CMP que hace una resta, hace un AND con el operando.
+Si necesitas saber si un numero es multiplo de una potencia de 2, podes usar TEST con la potencia de 2 menos 1, si el resultado es 0 (JZ) entonces es multiplo. Muy util en bucles.
+En la System V ABI de 32 bits, no es necesario para nada alinear el stack a 16 bytes.
+No es necesario flushear la TLB si se modifico el cr3, justamente el flush se hace reescribiendo en el cr3.
+Cuando ocurre un page fault, cr2 contiene la dirección que lo provocó.
+Las interrupt gate automáticamente desactivan las interrupciones y se activan solas al ejecutar IRET porque se pushean los flags, no es necesario usar STI y CLI.
+Las entradas de la IDT tienen dos DPL, uno el que esta dentro de su selector de segmento que indica con que privilegio se pretende ejecutar la rutina (Generalmente va lo mismo que el cs del kernel), y otra dentro de la entrada misma que indica el privilegio necesario para llamar a dicha interrupción, este ultimo es el que discrimina que es una syscall de que no lo es.
+En bochs para saber el estado de la paginación en algun momento, se puede usar "info tab".
+Un simple ejemplo para entender mejor punteros en parametros de C http://pastebin.com/raw.php?i=ddCccwA.
+Un puntero en C tiene una aritmetica diferente a la entera, se opera dependiendo el tamaño del elemento al que apunta, por ejemplo si apunta a un struct de 32 bytes, puntero++ lo va a incrementar en 32, util si se quiere referenciar el siguiente elemento de un array.
+En C si se quiere hacer aritmetica de punteros en bytes, es correcto castearlo antes a uintptr_t o intptr_t, char* tambien es posible aunque menos correcto.
+En C while (*(str_a++) = *(str_b++)); copia el string str_b en str_a si str_b es null terminated y mas chico que el espacio str_a (str_a podria ser un puntero a un malloc u otro string).
+Siempre que se va a inicializar el stack pointer para alguna tarea hay que tener en cuenta que el stack crece en sentido inverso, osea debe ir al final no al comienzo.
+El stack pointer siempre apunta al ultimo elemento pusheado, al menos que se modifique por algun otro motivo.
+El base pointer a partir de 32 bits no es un registro especial para el procesador, es de proposito general, las ABIs lo usan para armar el stack frame lo cual es util para hacer stack traces y acceder parametros.
+Los registros si y di son por source index y destination index, por eso muchas instrucciones los usan especificamente para referenciar dos posiciones de memoria, como MOVSD.
+Los registros a b c y d (Y sus respectivas extensiones) son por accumulator, base, count y data. Es por esto que loop y los shifts usan rcx, rax muchas veces es un destinatario fijo, rdx tambien y a su vez se usa para los puertos de IN y OUT. En 16 bits, solo se podia acceder a memoria indexeada con BX y el BP, de ahi la base.
+En 32 bits con paginas de 4K, los 20 bits mas significativos de un CR3 o PDE o PTE apuntan a un marco de pagina (indexeado de a pagina, osea 5 es la sexta pagina) dependiendo el caso: CR3 -> PD -> PT -> Pagina mapeada.
+Si la granularidad de un segmento esta en 1, el limite esta indexeado de a paginas de 4K, por lo tanto si el limite es 0, se puede acceder de 0x0 a 0xFFF sin problemas, o el limite en 1 de 0x0 a 0x1FFF y asi sucesivamente.
+Si un struct en C no tiene __attribute__(packed) hay que tener cuidado con el offset de cada campo, pueden tener padding.
+Si un array en C tiene un tamaño definido (Ejemplo nombre_struct array[4], o int array[x] donde x es un entero positivo), el operador sizeof devuelve el tamaño entero en bytes, esto es porque las cosas de la forma tipo[cantidad] son tipos tambien.
+Si se tiene que multiplicar o dividir por una potencia de 2, se pueden usar shifts donde la cantidad depende de 2^cantidad que se quiera dividir.
+Un puntero a void no apunta a nada definido, por lo tanto hacer aritmetica de punteros con punteros a void esta indefinido.
+Para saber el signo de un entero o un float, basta con ver el bit mas significativo.
