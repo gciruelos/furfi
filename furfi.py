@@ -25,7 +25,7 @@ NICK = 'furfi'
 IDENT = 'furfi2'
 REALNAME = 'Furfi the Second'
 MASTER = 'godel'
-CHANNEL = '#Orga2Test'
+CHANNEL = '#Orga2'
 
 OPERATORS = {
     ast.Add: op.add,
@@ -91,12 +91,8 @@ def remove_dups(top_list):
 
 def update_top_cache():
     global top_words, top_upvotes
-    top_words.sort(reverse=True)
-    top_upvotes.sort(reverse=True)
-
-    top_words = remove_dups(top_words)[:10]
-    top_upvotes = remove_dups(top_upvotes)[:10]
-
+    top_words = sorted(remove_dups(top_words), reverse=True)[:10]
+    top_upvotes = sorted(remove_dups(top_upvotes), reverse=True)[:10]
 
 def say(message, user=''):
     message = message if user == '' else '%s: %s' % (user, message)
