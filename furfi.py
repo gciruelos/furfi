@@ -73,7 +73,7 @@ def update_db(user, line):
     full_line = ' '.join(line)
     pattern = re.compile('(\S+\+\+)|(\S+: *\+\+)')
     for match in re.finditer(pattern, full_line):
-        upvoted_user = match.group(0).split(':')[0]
+        upvoted_user = match.group(0).split(':')[0].split('+')[0]
         if upvoted_user != user:
             upvoted_user_value = {'words': 0, 'upvotes': 0}
             if upvoted_user in db:
@@ -226,6 +226,10 @@ def main():
                 message = ' '.join(line[3:])
                 message = message[1:]
                 user = ((line[0].split('!'))[0])[1:]
+                chan = line[2]
+                if chan != CHANNEL and user != MASTER:
+                    say('Hablame por %s por favor.' % CHANNEL, user)
+                    continue
                 parsed = message.split()
                 update_db(user, parsed)
                 if parsed[0] == 'furfi:':
@@ -253,7 +257,7 @@ def main():
 
 
 if __name__ == '__main__':
-    db = shelve.open(DB_FILE, flag='n', writeback=False) if shelve.open(DB_FILE, flag='n', writeback=False) else shelve.open(DB_FILE, flag='w', writeback=False)
+    db = shelve.open(DB_FILE, flag='c', writeback=False)
 
     log = open('furfi.log', 'a')
     s = socket.socket()
