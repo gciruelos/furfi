@@ -188,8 +188,8 @@ FUCOMP,http://www.felixcloutier.com/x86/FUCOM:FUCOMP:FUCOMPP.html,Unordered Comp
 FUCOMPP,http://www.felixcloutier.com/x86/FUCOM:FUCOMP:FUCOMPP.html,Unordered Compare Floating Point Values
 FXAM,http://www.felixcloutier.com/x86/FXAM.html,Examine ModR/M
 FXCH,http://www.felixcloutier.com/x86/FXCH.html,Exchange Register Contents
-FXRSTOR,http://www.felixcloutier.com/x86/FXRSTOR.html,Restore x87 FPU, MMX , XMM, and MXCSR State
-FXSAVE,http://www.felixcloutier.com/x86/FXSAVE.html,Save x87 FPU, MMX Technology, and SSE State
+FXRSTOR,http://www.felixcloutier.com/x86/FXRSTOR.html,"Restore x87 FPU, MMX , XMM, and MXCSR State"
+FXSAVE,http://www.felixcloutier.com/x86/FXSAVE.html,"Save x87 FPU, MMX Technology, and SSE State"
 FXTRACT,http://www.felixcloutier.com/x86/FXTRACT.html,Extract Exponent and Significand
 FYL2X,http://www.felixcloutier.com/x86/FYL2X.html,Compute y ∗ log2x
 FYL2XP1,http://www.felixcloutier.com/x86/FYL2XP1.html,Compute y ∗ log2(x +1)
@@ -345,14 +345,14 @@ PCMPEQB,http://www.felixcloutier.com/x86/PCMPEQB:PCMPEQW:PCMPEQD.html,Compare Pa
 PCMPEQW,http://www.felixcloutier.com/x86/PCMPEQB:PCMPEQW:PCMPEQD.html,Compare Packed Data for Equal
 PCMPEQD,http://www.felixcloutier.com/x86/PCMPEQB:PCMPEQW:PCMPEQD.html,Compare Packed Data for Equal
 PCMPEQQ,http://www.felixcloutier.com/x86/PCMPEQQ.html,Compare Packed Qword Data for Equal
-PCMPESTRI,http://www.felixcloutier.com/x86/PCMPESTRI.html,Packed Compare Explicit Length Strings, Return Index
-PCMPESTRM,http://www.felixcloutier.com/x86/PCMPESTRM.html,Packed Compare Explicit Length Strings, Return Mask
+PCMPESTRI,http://www.felixcloutier.com/x86/PCMPESTRI.html,"Packed Compare Explicit Length Strings, Return Index"
+PCMPESTRM,http://www.felixcloutier.com/x86/PCMPESTRM.html,"Packed Compare Explicit Length Strings, Return Mask"
 PCMPGTB,http://www.felixcloutier.com/x86/PCMPGTB:PCMPGTW:PCMPGTD.html,Compare Packed Signed Integers for Greater Than
 PCMPGTW,http://www.felixcloutier.com/x86/PCMPGTB:PCMPGTW:PCMPGTD.html,Compare Packed Signed Integers for Greater Than
 PCMPGTD,http://www.felixcloutier.com/x86/PCMPGTB:PCMPGTW:PCMPGTD.html,Compare Packed Signed Integers for Greater Than
 PCMPGTQ,http://www.felixcloutier.com/x86/PCMPGTQ.html,Compare Packed Data for Greater Than
-PCMPISTRI,http://www.felixcloutier.com/x86/PCMPISTRI.html,Packed Compare Implicit Length Strings, Return Index
-PCMPISTRM,http://www.felixcloutier.com/x86/PCMPISTRM.html,Packed Compare Implicit Length Strings, Return Mask
+PCMPISTRI,http://www.felixcloutier.com/x86/PCMPISTRI.html,"Packed Compare Implicit Length Strings, Return Index"
+PCMPISTRM,http://www.felixcloutier.com/x86/PCMPISTRM.html,"Packed Compare Implicit Length Strings, Return Mask"
 PDEP,http://www.felixcloutier.com/x86/PDEP.html,Parallel Bits Deposit
 PEXT,http://www.felixcloutier.com/x86/PEXT.html,Parallel Bits Extract
 PEXTRB,http://www.felixcloutier.com/x86/PEXTRB:PEXTRD:PEXTRQ.html,Extract Byte/Dword/Qword
@@ -440,7 +440,7 @@ PUNPCKLBW,http://www.felixcloutier.com/x86/PUNPCKLBW:PUNPCKLWD:PUNPCKLDQ:PUNPCKL
 PUNPCKLWD,http://www.felixcloutier.com/x86/PUNPCKLBW:PUNPCKLWD:PUNPCKLDQ:PUNPCKLQDQ.html,Unpack Low Data
 PUNPCKLDQ,http://www.felixcloutier.com/x86/PUNPCKLBW:PUNPCKLWD:PUNPCKLDQ:PUNPCKLQDQ.html,Unpack Low Data
 PUNPCKLQDQ,http://www.felixcloutier.com/x86/PUNPCKLBW:PUNPCKLWD:PUNPCKLDQ:PUNPCKLQDQ.html,Unpack Low Data
-PUSH,http://www.felixcloutier.com/x86/PUSH.html,Push Word, Doubleword or Quadword Onto the Stack
+PUSH,http://www.felixcloutier.com/x86/PUSH.html,"Push Word, Doubleword or Quadword Onto the Stack"
 PUSHA,http://www.felixcloutier.com/x86/PUSHA:PUSHAD.html,Push All General-Purpose Registers
 PUSHAD,http://www.felixcloutier.com/x86/PUSHA:PUSHAD.html,Push All General-Purpose Registers
 PUSHF,http://www.felixcloutier.com/x86/PUSHF:PUSHFD.html,Push EFLAGS Register onto the Stack
