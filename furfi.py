@@ -4,12 +4,13 @@ IRC Bot for #Orga2.
 '''
 
 import ast
+import csv
 import operator as op
 import random
 import re
+import shelve
 import socket
 import sys
-import shelve
 
 DB_FILE = 'nicks.db'
 ASM_FILE = 'asm.csv'
@@ -198,9 +199,10 @@ def noittip(user):
 def init_structures():
     for line in open(PHRASES_FILE, 'r').readlines():
         phrases.append(line)
-    for line in open(ASM_FILE, 'r').readlines():
-        instr = list(map(lambda s: s.strip(), line.split(',')))
-        asm_instr[instr[0]] = instr[1:]
+    with open(ASM_FILE) as csvfile:
+        asmreader = csv.reader(csvfile)
+        for row in asmreader:
+            asm_instr[row[0]] = (row[1], row[2])
     for user in db.keys():
         user_value = db[user]
         top_words.append((user_value['words'], user))
