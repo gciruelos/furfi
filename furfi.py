@@ -131,7 +131,7 @@ def manual(user):
     say('System Programming (TP3): %s' % 'http://goo.gl/VxFcxU')
 
 def asm(user, parsed):
-    if len(parsed) < 1:
+    if len(parsed) <= 1:
         say('No pude encontrar esa instrucción.', user)
         return
     instr = parsed[1].upper()
@@ -150,10 +150,12 @@ def asm(user, parsed):
 
 def evalchat(user, parsed):
     expr = ' '.join(parsed[1:])
+    if expr == '':
+        return
     try:
         result = eval_expr(expr)
         say('dec: %d      hex: %s' % (result, hex(result)), user)
-    except TypeError:
+    except:
         say('Error evaluando.', user)
 
 def wordschat(user):
@@ -216,6 +218,7 @@ def main():
         for line in temp:
             line = str.rstrip(line)
             line = str.split(line)
+            print(line)
             if line[0] == 'PING':
                 s.send(bytes('PONG %s\r\n' % line[1], 'UTF-8'))
             if line[1] == 'PRIVMSG':
@@ -228,7 +231,9 @@ def main():
                     continue
                 parsed = message.split()
                 update_db(user, parsed)
-                if parsed[0] == 'furfi:':
+                if len(parsed) == 0:
+                     pass
+                elif parsed[0] == 'furfi:':
                     furfi(user)
                 elif parsed[0] == '!manual' or parsed[0] == '!manuales':
                     manual(user)

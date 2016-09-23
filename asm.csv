@@ -306,9 +306,9 @@ MULSD,http://www.felixcloutier.com/x86/MULSD.html,Multiply Scalar Double-Precisi
 MULSS,http://www.felixcloutier.com/x86/MULSS.html,Multiply Scalar Single-Precision Floating-Point Values
 MULX,http://www.felixcloutier.com/x86/MULX.html,Unsigned Multiply Without Affecting Flags
 MWAIT,http://www.felixcloutier.com/x86/MWAIT.html,Monitor Wait
-NEG,http://www.felixcloutier.com/x86/NEG.html','description': "Two's Complement Negation"},
+NEG,http://www.felixcloutier.com/x86/NEG.html,Two\'s Complement Negation
 NOP,http://www.felixcloutier.com/x86/NOP.html,No Operation
-NOT,http://www.felixcloutier.com/x86/NOT.html','description': "One's Complement Negation"},
+NOT,http://www.felixcloutier.com/x86/NOT.html,One\'s Complement Negation
 OR,http://www.felixcloutier.com/x86/OR.html,Logical Inclusive OR
 ORPD,http://www.felixcloutier.com/x86/ORPD.html,Bitwise Logical OR of Double-Precision Floating-Point Values
 ORPS,http://www.felixcloutier.com/x86/ORPS.html,Bitwise Logical OR of Single-Precision Floating-Point Values
