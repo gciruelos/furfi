@@ -1,5 +1,5 @@
 Si shifteas un registro XMM completo, por ejemplo con PSLLDQ, la cantidad del shifteo es de a bytes.
-PSHUFB no recibe un inmediato sino un registro xmm completo, lo hace util para reordenamientos dinamicos.
+PSHUFB no recibe un inmediato sino un registro xmm completo, lo hace útil para reordenamientos dinamicos.
 Se puede invertir el orden de los bytes de un registro usando BSWAP.
 Si solo se quieren negar bits individuales con una mascara se puede usar XOR, lo mismo en SSE con PXOR, se va a negar solo donde haya 1s en la mascara.
 Todas las operaciones de 32 bits que pueden modificar un registro limpian la parte alta del mismo con 0s en 64 bits, esto no sucede con las de 16 bits.

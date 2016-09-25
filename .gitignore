@@ -90,3 +90,5 @@ ENV/
 
 #logs
 furfi.log
+nicks.db
+nohup.out
