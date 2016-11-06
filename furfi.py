@@ -9,6 +9,7 @@ import datetime
 import operator as op
 import random
 import re
+import traceback
 import shelve
 import socket
 import sys
@@ -52,6 +53,7 @@ top_words = []
 top_upvotes = []
 
 seen_dict = {}
+connected = set()
 
 def eval_expr(expr):
     return eval_(ast.parse(expr, mode='eval').body)
@@ -204,6 +206,8 @@ def seen(user):
             (user,
              seen_dict[user]['time'].isoformat(' '),
              seen_dict[user]['message']))
+    elif user in connected:
+        say('%s esta conectado, no lo ves?' % user)
     else:
         say('Ni idea, loco.')
 
@@ -227,18 +231,28 @@ def get_message(line):
     temp = ' '.join(line[3:])
     return temp[1:]
 
+def get_connected(line):
+    users = line[5:]
+    if len(users) > 0:
+        users = [users[0][1:]] + users[1:]
+        for user in users:
+            connected.add(user)
+
 def main():
     readbuffer = ''
     while 1:
         readbuffer = readbuffer+s.recv(1024).decode('UTF-8')
         temp = str.split(readbuffer, '\n')
         readbuffer = temp.pop()
+        last_line = []
 
         for line in temp:
             line = str.rstrip(line)
             line = str.split(line)
             log.write(str(line) + '\n')
             log.flush()
+            if line[-4:] == [':End', 'of', '/NAMES', 'list.']:
+                get_connected(last_line)
             if line[0] == 'PING':
                 s.send(bytes('PONG %s\r\n' % line[1], 'UTF-8'))
             if line[1] == 'NOTICE':
@@ -252,6 +266,7 @@ def main():
                         tz=datetime.timezone(datetime.timedelta(hours=-3))),
                     'message' : (' '.join(line[2:]))[1:],
                 }
+                connected.discard(user)
             elif line[1] == 'PRIVMSG':
                 message = get_message(line)
                 user = get_user(line)
@@ -283,10 +298,11 @@ def main():
                     topupvotes(user)
                 elif parsed[0] == '!help':
                     helpchat(user)
-                elif parsed[0] == '!seen' and len(parsed) > 0:
+                elif parsed[0] == '!seen' and len(parsed) > 1:
                     seen(parsed[1])
                 elif parsed[0] == '!say' and user == MASTER:
                     say(' '.join(parsed[1:]))
+            last_line = line
 
 
 if __name__ == '__main__':
@@ -301,9 +317,10 @@ if __name__ == '__main__':
     s.send(bytes('PRIVMSG %s :Hello Master\r\n' % MASTER, 'UTF-8'))
     init_structures()
     try:
+        s.send(bytes('NAMES\r\n', 'UTF-8'))
         main()
-    except BaseException as e:
-        log.write('ERROR HAPPENED\n' + str(e) + '\n') 
+    except BaseException as e: 
+        log.write('ERROR HAPPENED\n' + traceback.format_exc() + '\n') 
     db.sync()
     db.close()
 
