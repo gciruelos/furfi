@@ -267,6 +267,8 @@ def main():
                     'message' : (' '.join(line[2:]))[1:],
                 }
                 connected.discard(user)
+            elif line[1] == 'JOIN':
+                connected.add(get_user(line))
             elif line[1] == 'PRIVMSG':
                 message = get_message(line)
                 user = get_user(line)
