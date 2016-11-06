@@ -220,9 +220,13 @@ def main():
         for line in temp:
             line = str.rstrip(line)
             line = str.split(line)
-            print(line)
+            log.write(str(line) + '\n')
+            log.flush()
             if line[0] == 'PING':
                 s.send(bytes('PONG %s\r\n' % line[1], 'UTF-8'))
+            if line[1] == 'NOTICE':
+                if line[-1] in ['SIGTERM']:
+                    raise
             if line[1] == 'PRIVMSG':
                 message = ' '.join(line[3:])
                 message = message[1:]
@@ -270,7 +274,13 @@ if __name__ == '__main__':
     s.send(bytes('JOIN %s\r\n' % CHANNEL, 'UTF-8'))
     s.send(bytes('PRIVMSG %s :Hello Master\r\n' % MASTER, 'UTF-8'))
     init_structures()
-    main()
+    error_count = 0
+    while error_count < 20:
+        try:
+            main()
+        except BaseException as e:
+            log.write('ERROR HAPPENED\n' + str(e))
+            error_count += 1
     db.sync()
     db.close()
 
