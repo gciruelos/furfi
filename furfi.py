@@ -5,6 +5,7 @@ IRC Bot for #Orga2.
 
 import ast
 import csv
+import datetime
 import operator as op
 import random
 import re
@@ -49,6 +50,8 @@ phrases = []
 # This could be done faster with a priority queue.
 top_words = []
 top_upvotes = []
+
+seen_dict = {}
 
 def eval_expr(expr):
     return eval_(ast.parse(expr, mode='eval').body)
@@ -195,6 +198,14 @@ def helpchat(user):
 def noittip(user):
     say(phrases[random.randint(0, len(phrases) - 1)], user)
 
+def seen(user):
+    if user in seen_dict:
+        say('La última vez que vi a %s fue en %s y se fue con motivo "%s".' % \
+            (user,
+             seen_dict[user]['time'].isoformat(' '),
+             seen_dict[user]['message']))
+    else:
+        say('Ni idea, loco.')
 
 def init_structures():
     for line in open(PHRASES_FILE, 'r').readlines():
@@ -209,6 +220,12 @@ def init_structures():
         top_upvotes.append((user_value['upvotes'], user))
     update_top_cache()
 
+def get_user(line):
+    return ((line[0].split('!'))[0])[1:]
+
+def get_message(line):
+    temp = ' '.join(line[3:])
+    return temp[1:]
 
 def main():
     readbuffer = ''
@@ -227,10 +244,17 @@ def main():
             if line[1] == 'NOTICE':
                 if line[-1] in ['SIGTERM']:
                     raise
-            if line[1] == 'PRIVMSG':
-                message = ' '.join(line[3:])
-                message = message[1:]
-                user = ((line[0].split('!'))[0])[1:]
+            elif line[1] == 'QUIT':
+                message = get_message(line)
+                user = get_user(line)
+                seen_dict[user] = {
+                    'time' : datetime.datetime.now(
+                        tz=datetime.timezone(datetime.timedelta(hours=-3))),
+                    'message' : (' '.join(line[2:]))[1:],
+                }
+            elif line[1] == 'PRIVMSG':
+                message = get_message(line)
+                user = get_user(line)
                 chan = line[2]
                 if chan != CHANNEL and user != MASTER:
                     say('Hablame por %s por favor.' % CHANNEL, user)
@@ -259,6 +283,8 @@ def main():
                     topupvotes(user)
                 elif parsed[0] == '!help':
                     helpchat(user)
+                elif parsed[0] == '!seen' and len(parsed) > 0:
+                    seen(parsed[1])
                 elif parsed[0] == '!say' and user == MASTER:
                     say(' '.join(parsed[1:]))
 
@@ -274,13 +300,10 @@ if __name__ == '__main__':
     s.send(bytes('JOIN %s\r\n' % CHANNEL, 'UTF-8'))
     s.send(bytes('PRIVMSG %s :Hello Master\r\n' % MASTER, 'UTF-8'))
     init_structures()
-    error_count = 0
-    while error_count < 20:
-        try:
-            main()
-        except BaseException as e:
-            log.write('ERROR HAPPENED\n' + str(e))
-            error_count += 1
+    try:
+        main()
+    except BaseException as e:
+        log.write('ERROR HAPPENED\n' + str(e) + '\n') 
     db.sync()
     db.close()
 
