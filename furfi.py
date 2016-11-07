@@ -28,7 +28,7 @@ NICK = 'furfi'
 IDENT = 'furfi2'
 REALNAME = 'Furfi the Second'
 MASTER = 'godel'
-CHANNEL = '#Orga2'
+CHANNEL = '#Orga2Test'
 
 OPERATORS = {
     ast.Add: op.add,
@@ -201,13 +201,13 @@ def noittip(user):
     say(phrases[random.randint(0, len(phrases) - 1)], user)
 
 def seen(user):
-    if user in seen_dict:
+    if user in connected:
+        say('%s esta conectado, no lo ves?' % user)
+    elif user in seen_dict:
         say('La última vez que vi a %s fue en %s y se fue con motivo "%s".' % \
             (user,
              seen_dict[user]['time'].isoformat(' '),
              seen_dict[user]['message']))
-    elif user in connected:
-        say('%s esta conectado, no lo ves?' % user)
     else:
         say('Ni idea, loco.')
 
@@ -236,7 +236,8 @@ def get_connected(line):
     if len(users) > 0:
         users = [users[0][1:]] + users[1:]
         for user in users:
-            connected.add(user)
+            real_user = user[1:] if user[0] == '@' else user
+            connected.add(real_user.lower())
 
 def main():
     readbuffer = ''
@@ -251,7 +252,8 @@ def main():
             line = str.split(line)
             log.write(str(line) + '\n')
             log.flush()
-            if line[-4:] == [':End', 'of', '/NAMES', 'list.']:
+            if line[-4:] == [':End', 'of', '/NAMES', 'list.'] and \
+                  line[-5] == CHANNEL:
                 get_connected(last_line)
             if line[0] == 'PING':
                 s.send(bytes('PONG %s\r\n' % line[1], 'UTF-8'))
@@ -260,7 +262,7 @@ def main():
                     raise
             elif line[1] == 'QUIT':
                 message = get_message(line)
-                user = get_user(line)
+                user = get_user(line).lower()
                 seen_dict[user] = {
                     'time' : datetime.datetime.now(
                         tz=datetime.timezone(datetime.timedelta(hours=-3))),
@@ -268,7 +270,10 @@ def main():
                 }
                 connected.discard(user)
             elif line[1] == 'JOIN':
-                connected.add(get_user(line))
+                user = get_user(line).lower()
+                connected.add(user)
+                if user in seen_dict.keys():
+                    del seen_dict[user]
             elif line[1] == 'PRIVMSG':
                 message = get_message(line)
                 user = get_user(line)
@@ -301,7 +306,7 @@ def main():
                 elif parsed[0] == '!help':
                     helpchat(user)
                 elif parsed[0] == '!seen' and len(parsed) > 1:
-                    seen(parsed[1])
+                    seen(parsed[1].lower())
                 elif parsed[0] == '!say' and user == MASTER:
                     say(' '.join(parsed[1:]))
             last_line = line
