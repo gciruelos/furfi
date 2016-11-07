@@ -28,7 +28,7 @@ NICK = 'furfi'
 IDENT = 'furfi2'
 REALNAME = 'Furfi the Second'
 MASTER = 'godel'
-CHANNEL = '#Orga2Test'
+CHANNEL = '#Orga2'
 
 OPERATORS = {
     ast.Add: op.add,
