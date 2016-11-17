@@ -196,6 +196,8 @@ def helpchat(user):
     say('!help              - Ver este mensaje.')
     say('!manuales          - Link a los manuales.')
     say('!noittip           - Escuchar un tip de noit.')
+    say('!seen              - Cuándo fue la última vez que vi a un usuario.')
+    say('!words             - Cuántas palabras dijiste.')
 
 def noittip(user):
     say(phrases[random.randint(0, len(phrases) - 1)], user)
@@ -239,10 +241,19 @@ def get_connected(line):
             real_user = user[1:] if user[0] == '@' else user
             connected.add(real_user.lower())
 
+def morite():
+    db.sync()
+    db.close()
+    exit(0)
+
 def main():
     readbuffer = ''
     while 1:
-        readbuffer = readbuffer+s.recv(1024).decode('UTF-8')
+        temp_buf = s.recv(1024)
+        try:
+            readbuffer = readbuffer + temp_buf.decode('UTF-8')
+        except:
+            say('Ojo, estas usando encoding no standard: %s' % temp_buf)
         temp = str.split(readbuffer, '\n')
         readbuffer = temp.pop()
         last_line = []
@@ -309,7 +320,12 @@ def main():
                     seen(parsed[1].lower())
                 elif parsed[0] == '!say' and user == MASTER:
                     say(' '.join(parsed[1:]))
+                elif parsed[0] == '!morite' and user == MASTER:
+                    say('Adiós mundo cruel.')
+                    morite()
             last_line = line
+
+
 
 
 if __name__ == '__main__':
